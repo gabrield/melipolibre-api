@@ -1,12 +1,12 @@
 from flask import Flask
 from flask_restful import Api
-from resources.bee import Bee, Bees
+from resources.bee import Bees
 from models.bee import BeeModel
 import json
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///nativasf.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 api = Api(app)
 
 @app.before_first_request

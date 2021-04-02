@@ -15,26 +15,25 @@ class Bees(Resource):
             return '%'+val+'%'
         
         def get(self):
-            params = Bee.params.parse_args()
-
+            params = Bees.params.parse_args()
+            
+            #filter only path params which are not None
             valid_params = {key:params[key] for key in params if params[key] is not None}
-
+            #return all bees if no parameter is passed
             if (len(valid_params) == 0):
-                return [bee.json() for bee in BeeModel.query.all()]
+                return {'bees': [bee.json() for bee in BeeModel.query.all()]}
 
-
- 
             query = BeeModel.query
  
-            if params["genus"]:
-                query = query.filter(BeeModel.genus.like(self.normalize(params["genus"])))
-            if params["subgenus"]:
-                query = query.filter(BeeModel.subgenus.like(self.normalize(params["subgenus"])))
-            if params["specie"]:
-                query = query.filter(BeeModel.specie.like(self.normalize(params["specie"])))
-            if params["common_name"]:
-                query = query.filter(BeeModel.common_name.like(self.normalize(params["common_name"])))
-            if params["occurrence_area"]:
-                query = query.filter(BeeModel.occurrence_area.like(self.normalize(params["occurrence_area"])))
+            if valid_params.get('genus'):
+                query = query.filter(BeeModel.genus.like(self.normalize(valid_params["genus"])))
+            if valid_params.get('subgenus'):
+                query = query.filter(BeeModel.subgenus.like(self.normalize(valid_params["subgenus"])))
+            if valid_params.get('specie'):
+                query = query.filter(BeeModel.specie.like(self.normalize(valid_params["specie"])))
+            if valid_params.get('common_name'):
+                query = query.filter(BeeModel.common_name.like(self.normalize(valid_params["common_name"])))
+            if valid_params.get('occurrence_area'):
+                query = query.filter(BeeModel.occurrence_area.like(self.normalize(valid_params["occurrence_area"])))
  
             return {"bees": [bee.json() for bee in query]}
