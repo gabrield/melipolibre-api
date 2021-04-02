@@ -2,13 +2,7 @@ from flask_restful import Resource, reqparse
 import json
 from models.bee import BeeModel
 
-
 class Bees(Resource):
-
-    def get(self):
-        return [bee.json() for bee in BeeModel.query.all()]
-
-class Bee(Resource):
         params = reqparse.RequestParser()
         params.add_argument('genus', type=str)
         params.add_argument('subgenus', type=str)
