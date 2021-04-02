@@ -20,7 +20,7 @@ def create_database():
     
 
 #bee resources
-api.add_resource(Bee, '/bees')
+api.add_resource(Bees, '/bees')
 #api.add_resource(Bee, '/bee')
 
 
