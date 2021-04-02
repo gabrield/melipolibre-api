@@ -1,0 +1,2291 @@
+[
+  {
+    "genus": "Aparatrigona",
+    "subgenus": "",
+    "specie": "Aparatrigona impunctata",
+    "common_name": "abelha-de-cupim",
+    "occurrence_area": "AC, AP, AM, MT, PA, RO, RR"
+  },
+  {
+    "genus": "Camargoia",
+    "subgenus": "",
+    "specie": "Camargoia camargoi",
+    "common_name": "",
+    "occurrence_area": "AP, AM"
+  },
+  {
+    "genus": "Camargoia",
+    "subgenus": "",
+    "specie": "Camargoia nordestina",
+    "common_name": "mombuca-vermelha, moça-branca",
+    "occurrence_area": "CE, PI, TO"
+  },
+  {
+    "genus": "Camargoia",
+    "subgenus": "",
+    "specie": "Camargoia pilicornis",
+    "common_name": "mombuca-vermelha, moça-branca",
+    "occurrence_area": "MA, PA"
+  },
+  {
+    "genus": "Celetrigona",
+    "subgenus": "",
+    "specie": "Celetrigona euclydiana",
+    "common_name": "Celetrigona euclydiana",
+    "occurrence_area": "AC"
+  },
+  {
+    "genus": "Celetrigona",
+    "subgenus": "",
+    "specie": "Celetrigona hirsuticornis",
+    "common_name": "Celetrigona hirsuticornis",
+    "occurrence_area": "AC, AM, MT"
+  },
+  {
+    "genus": "Celetrigona",
+    "subgenus": "",
+    "specie": "Celetrigona longicornis",
+    "common_name": "Celetrigona longicornis",
+    "occurrence_area": "AM, GO, MA, MT, PA, RO"
+  },
+  {
+    "genus": "Celetrigona",
+    "subgenus": "",
+    "specie": "Celetrigona manauara",
+    "common_name": "Celetrigona manauara",
+    "occurrence_area": "AP, AM, PA"
+  },
+  {
+    "genus": "Cephalotrigona",
+    "subgenus": "",
+    "specie": "Cephalotrigona capitata",
+    "common_name": "mombucão, abelha-papaterra, currunchos, guare-negra, mombuca, eiruzú, negrito, eirusú, eirusú-grande, mumbuca, bombuca, jiu-butu",
+    "occurrence_area": "AP, CE, ES, MT, MG, PR, PA, SC, SP"
+  },
+  {
+    "genus": "Cephalotrigona",
+    "subgenus": "",
+    "specie": "Cephalotrigona femorata",
+    "common_name": "mombuquinha, mombucão-amazonense",
+    "occurrence_area": "AP, AM, MA, PA, RO"
+  },
+  {
+    "genus": "Dolichotrigona",
+    "subgenus": "",
+    "specie": "Dolichotrigona browni",
+    "common_name": "Dolichotrigona browni",
+    "occurrence_area": "AC, MT, RO"
+  },
+  {
+    "genus": "Dolichotrigona",
+    "subgenus": "",
+    "specie": "Dolichotrigona clavicornis",
+    "common_name": "Dolichotrigona clavicornis",
+    "occurrence_area": "AC"
+  },
+  {
+    "genus": "Dolichotrigona",
+    "subgenus": "",
+    "specie": "Dolichotrigona longitarsis",
+    "common_name": "Dolichotrigona longitarsis",
+    "occurrence_area": "AC, AM, MA, MT, PA, RO"
+  },
+  {
+    "genus": "Dolichotrigona",
+    "subgenus": "",
+    "specie": "Dolichotrigona mendersoni",
+    "common_name": "Dolichotrigona mendersoni",
+    "occurrence_area": "AC, AM, RO"
+  },
+  {
+    "genus": "Dolichotrigona",
+    "subgenus": "",
+    "specie": "Dolichotrigona moratoi",
+    "common_name": "Dolichotrigona moratoi",
+    "occurrence_area": "AC, AM"
+  },
+  {
+    "genus": "Dolichotrigona",
+    "subgenus": "",
+    "specie": "Dolichotrigona rondoni",
+    "common_name": "Dolichotrigona rondoni",
+    "occurrence_area": "RO"
+  },
+  {
+    "genus": "Dolichotrigona",
+    "subgenus": "",
+    "specie": "Dolichotrigona schulthessi",
+    "common_name": "Dolichotrigona schulthessi",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Dolichotrigona",
+    "subgenus": "",
+    "specie": "Dolichotrigona tavaresi",
+    "common_name": "Dolichotrigona tavaresi",
+    "occurrence_area": "AC, AM"
+  },
+  {
+    "genus": "Duckeola",
+    "subgenus": "",
+    "specie": "Duckeola ghilianii",
+    "common_name": "caçadora-de-limão",
+    "occurrence_area": "AP, AM, MT, PA"
+  },
+  {
+    "genus": "Duckeola",
+    "subgenus": "",
+    "specie": "Duckeola pavani",
+    "common_name": "Duckeola pavani",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Friesella",
+    "subgenus": "",
+    "specie": "Friesella schrottkyi",
+    "common_name": "mirim-preguiça, lambe-suor, abelha-mosquito",
+    "occurrence_area": "ES, MG, PR, SP"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta dispar",
+    "common_name": "Frieseomelitta dispar",
+    "occurrence_area": "BA, ES, MG, PB"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta doederleini",
+    "common_name": "marmelada, zamboque, mané-de-abreu, moça-branca",
+    "occurrence_area": "BA, CE, MA, MT, MG, PB, PE, PI, RN"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta flavicornis",
+    "common_name": "moça-branca, marmelada-amarela-mansa",
+    "occurrence_area": "AP, AM, PA, RR"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta francoi",
+    "common_name": "moça-branca, caveca",
+    "occurrence_area": "BA, ES, PB, PE, SE"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta freiremaiai",
+    "common_name": "perna-longa",
+    "occurrence_area": "BA, ES"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta languida",
+    "common_name": "mocinha-preta, marmelada-negra",
+    "occurrence_area": "BA, GO, MG, SP"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta longipes",
+    "common_name": "cacho-de-uva",
+    "occurrence_area": "PA"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta paranigra",
+    "common_name": "Frieseomelitta paranigra",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta portoi",
+    "common_name": "Frieseomelitta portoi",
+    "occurrence_area": "AM, MA, PA"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta meadewaldoi",
+    "common_name": "Frieseomelitta meadewaldoi",
+    "occurrence_area": "BR"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta silvestrii",
+    "common_name": "mocinha-preta, moça-preta, Marmelada, marmelada-negra, marmelada-preta, jatai-pretinha, yateí-pretello",
+    "occurrence_area": "MT, RO"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta trichocerata",
+    "common_name": "moça-branca, mosquito",
+    "occurrence_area": "AP, AM, PA, RO"
+  },
+  {
+    "genus": "Frieseomelitta",
+    "subgenus": "",
+    "specie": "Frieseomelitta varia",
+    "common_name": "marmelada-amarela, miguel-de-breu, manoel-de-breu, manoel-d'abreu, moça-branca, marmelada-amarela-brava, mehnodjành",
+    "occurrence_area": "BA, GO, MT, MG, SP, TO"
+  },
+  {
+    "genus": "Geniotrigona",
+    "subgenus": "",
+    "specie": "Geniotrigona incisa",
+    "common_name": "Geniotrigona incisa",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geniotrigona",
+    "subgenus": "",
+    "specie": "Geniotrigona thoracica",
+    "common_name": "Geniotrigona thoracica",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona acapulconis",
+    "common_name": "Geotrigona acapulconis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona aequinoctialis",
+    "common_name": "Geotrigona aequinoctialis",
+    "occurrence_area": "CE, MA, PA"
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona argentina",
+    "common_name": "Geotrigona argentina",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona chiriquiensis",
+    "common_name": "Geotrigona chiriquiensis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona fulvatra",
+    "common_name": "Geotrigona fulvatra",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona fulvohirta",
+    "common_name": "Geotrigona fulvohirta",
+    "occurrence_area": "AC, AM"
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona fumipennis",
+    "common_name": "Geotrigona fumipennis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona inusitata",
+    "common_name": "guira, aguirá, iruçu",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona joearroyoi",
+    "common_name": "Geotrigona joearroyoi",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona kaba",
+    "common_name": "Geotrigona kaba",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona kraussi",
+    "common_name": "Geotrigona kraussi",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona kwyrakai",
+    "common_name": "Geotrigona kwyrakai",
+    "occurrence_area": "PA, RO"
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona leucogastra",
+    "common_name": "Geotrigona leucogastra",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona lutzi",
+    "common_name": "Geotrigona lutzi",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona mattogrossensis",
+    "common_name": "Geotrigona mattogrossensis",
+    "occurrence_area": "MT, PA, RO"
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona mombuca",
+    "common_name": "mombuca, quira, guira, papaterra, guiruçu, iruçu-mineiro",
+    "occurrence_area": "BA, GO, MA, MT, MS, MG, PA, PI, SP, TO"
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona subfulva",
+    "common_name": "Geotrigona subfulva",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona subgrisea",
+    "common_name": "Geotrigona subgrisea",
+    "occurrence_area": "RR"
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona subnigra",
+    "common_name": "Geotrigona subnigra",
+    "occurrence_area": "AP, AM, PA"
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona subterranea",
+    "common_name": "uruçu-mineira",
+    "occurrence_area": "BA, MG, PR, SP"
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona tellurica",
+    "common_name": "Geotrigona tellurica",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona terricola",
+    "common_name": "Geotrigona terricola",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Geotrigona",
+    "subgenus": "",
+    "specie": "Geotrigona xanthopoda",
+    "common_name": "Geotrigona xanthopoda",
+    "occurrence_area": "PB"
+  },
+  {
+    "genus": "Heterotrigona",
+    "subgenus": "",
+    "specie": "Heterotrigona itama",
+    "common_name": "Heterotrigona itama",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Homotrigona",
+    "subgenus": "",
+    "specie": "Homotrigona fimbriata",
+    "common_name": "Homotrigona fimbriata",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta catira",
+    "common_name": "Lestrimelitta catira",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta chacoana",
+    "common_name": "Lestrimelitta chacoana",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta chamelenis",
+    "common_name": "Lestrimelitta chamelenis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta ciliata",
+    "common_name": "Lestrimelitta ciliata",
+    "occurrence_area": "PA"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta danuncia",
+    "common_name": "Lestrimelitta danuncia",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta ehrhardti",
+    "common_name": "Lestrimelitta ehrhardti",
+    "occurrence_area": "ES, MG, PR, RJ, SC, SP"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta glaberrima",
+    "common_name": "Lestrimelitta glaberrima",
+    "occurrence_area": "AP"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta glabrata",
+    "common_name": "Lestrimelitta glabrata",
+    "occurrence_area": "AC, AM, MT, RR"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta guyanensis",
+    "common_name": "Lestrimelitta guyanensis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta huilensis",
+    "common_name": "Lestrimelitta huilensis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta limao",
+    "common_name": "iratim, irati, limão, abelha-limão, eira-aquaietá, eira-aquai-etá, eíra-quãyetâ, irati, iriti, irutim",
+    "occurrence_area": "BA, CE, DF, GO, MA, MG, RO, SP"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta maracaia",
+    "common_name": "Lestrimelitta maracaia",
+    "occurrence_area": "AM, RO, RR"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta monodonta",
+    "common_name": "Lestrimelitta monodonta",
+    "occurrence_area": "AM, MA, PA, RR"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta mourei",
+    "common_name": "Lestrimelitta mourei",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta nana",
+    "common_name": "Lestrimelitta nana",
+    "occurrence_area": "AP"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta niitkib",
+    "common_name": "Lestrimelitta niitkib",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta opita",
+    "common_name": "Lestrimelitta opita",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta rufa",
+    "common_name": "Lestrimelitta rufa",
+    "occurrence_area": "AM, MT, PA, RO"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta rufipes",
+    "common_name": "limão-vermelha, iraxim",
+    "occurrence_area": "AM, BA, CE, ES, GO, MA, MT, MG, PR, PA, PI, RS, RO, RR, SC, SP, TO"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta similis",
+    "common_name": "Lestrimelitta similis",
+    "occurrence_area": "PA"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta spinosa",
+    "common_name": "Lestrimelitta spinosa",
+    "occurrence_area": "PA"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta sulina",
+    "common_name": "eirá-ti, irá-tinga, iratí, coalati, eirati, eirachi, kuañeti, abelha-limão",
+    "occurrence_area": "PR, RS, SC"
+  },
+  {
+    "genus": "Lestrimelitta",
+    "subgenus": "",
+    "specie": "Lestrimelitta tropica",
+    "common_name": "Lestrimelitta tropica",
+    "occurrence_area": "BA, CE, RJ"
+  },
+  {
+    "genus": "Leurotrigona",
+    "subgenus": "",
+    "specie": "Leurotrigona gracilis",
+    "common_name": "Leurotrigona gracilis",
+    "occurrence_area": "AC, AM, RO"
+  },
+  {
+    "genus": "Leurotrigona",
+    "subgenus": "",
+    "specie": "Leurotrigona muelleri",
+    "common_name": "mirim, lambe-olhos",
+    "occurrence_area": "BA, ES, GO, MA, MT, MS, MG, PR, PB, RO, SC, SP, TO"
+  },
+  {
+    "genus": "Leurotrigona",
+    "subgenus": "",
+    "specie": "Leurotrigona pusilla",
+    "common_name": "lábios-de-morena",
+    "occurrence_area": "AP, AM, PA"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) favosa",
+    "common_name": "Melipona (Melipona) favosa",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) baeri",
+    "common_name": "Melipona (Melipona) baeri",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) lunulata",
+    "common_name": "Melipona (Melipona) lunulata",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) mandacaia",
+    "common_name": "mandaçaia, uruçú-bahiana",
+    "occurrence_area": "AL, BA, CE, MG, PB, PE, PI, RN, SE"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) orbignyi",
+    "common_name": "manduri-matogrosso, jandaira-matogrossense",
+    "occurrence_area": "MT, MS"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) peruviana",
+    "common_name": "Melipona (Melipona) peruviana",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) phenax",
+    "common_name": "manduri-do-mato-grosso",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) subnitida",
+    "common_name": "jandaíra, uruçu",
+    "occurrence_area": "AL, BA, CE, MA, PB, PE, PI, RN, SE"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) variegatipes",
+    "common_name": "Melipona (Melipona) variegatipes",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) fuscata",
+    "common_name": "Melipona (Melipona) fuscata",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) lupitae",
+    "common_name": "Melipona (Melipona) lupitae",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) quadrifasciata",
+    "common_name": "mandaçaia, mandassaia, amanaçaí, amanaçaia, manaçaia-e-mandaçaia-grande, uruçu",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) quadrifasciata quadrifasciata",
+    "common_name": "mandaçaia, mandassaia, amanaçaí, amanaçaia, manaçaia-e-mandaçaia-grande, uruçu, mqq",
+    "occurrence_area": "MS, MG, PR, RS, RJ, SC, SP"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) quadrifasciata anthidioides",
+    "common_name": "mandaçaia, mandassaia, amanaçaí, amanaçaia, manaçaia-e-mandaçaia-grande, uruçu, mqa",
+    "occurrence_area": "AL, BA, ES, GO, MS, MG, PB, PE, RJ, SE, SP"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melipona",
+    "specie": "Melipona (Melipona) yucatanica",
+    "common_name": "Melipona (Melipona) yucatanica",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) bicolor bicolor",
+    "common_name": "Guarupu, fura-terra, garapu, graipu, guaraipo, guarapu, pé-de-pau, uruçu, Guirupu-(cor-telha/forma-ruiva), guaraipó",
+    "occurrence_area": "BA, ES, MG, RJ, SP"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) bicolor schenki",
+    "common_name": "Guaraipo-sulina, guarupu, curupú-(preta), pé-de-pau",
+    "occurrence_area": "PR, RS, RJ, SC, SP"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) concinnula",
+    "common_name": "Melipona (Eomelipona) concinnula",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) ogilviei",
+    "common_name": "Melipona (Eomelipona) ogilviei",
+    "occurrence_area": "AP, AM, PA, TO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) puncticollis",
+    "common_name": "uruçu-amarela-preguiça",
+    "occurrence_area": "AM, MA, PA"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) marginata",
+    "common_name": "Melipona (Eomelipona) marginata",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) amazonica",
+    "common_name": "juparazinha",
+    "occurrence_area": "AC, AP, AM, PA, RO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) asilvai",
+    "common_name": "manduri-rajada, rajada",
+    "occurrence_area": "AL, BA, CE, ES, MG, PB, PE, PI, RN, SE"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) bradleyi",
+    "common_name": "Melipona (Eomelipona) bradleyi",
+    "occurrence_area": "AP, AM, PA, RR"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) carrikeri",
+    "common_name": "Melipona (Eomelipona) carrikeri",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) illustris",
+    "common_name": "Melipona (Eomelipona) illustris",
+    "occurrence_area": "AM, MT, PA, RO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) carioca",
+    "common_name": "manduri-carioca",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) rufis",
+    "common_name": "manduri-amarela",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) obscurior",
+    "common_name": "Melipona (Eomelipona) obscurior",
+    "occurrence_area": "MT, PR, RS, SC, SP"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) schwarzi",
+    "common_name": "Melipona (Eomelipona) schwarzi",
+    "occurrence_area": "AC, AM, MT, PA, RO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) torrida",
+    "common_name": "Melipona (Eomelipona) torrida",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Eomelipona",
+    "specie": "Melipona (Eomelipona) tumupasae",
+    "common_name": "Melipona (Eomelipona) tumupasae",
+    "occurrence_area": "AC"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melikerria",
+    "specie": "Melipona (Melikerria) ambigua",
+    "common_name": "Melipona (Melikerria) ambigua",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melikerria",
+    "specie": "Melipona (Melikerria) compressipes",
+    "common_name": "tiúba, uruçu-cinzenta",
+    "occurrence_area": "AP, AM, RR"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melikerria",
+    "specie": "Melipona (Melikerria) manaosensis",
+    "common_name": "jupará, jurupá, japará, jandaíra-negra-amazônia, tiuba, -uruçu-cinza, -jandaira-preta-de-manaus",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melikerria",
+    "specie": "Melipona (Melikerria) fasciculata",
+    "common_name": "uruçu-cinzenta-amazonia, tiúba-do-maranhão, tiúba, tuíba, uruçu-cinza",
+    "occurrence_area": "MA, MT, PA, PI, TO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melikerria",
+    "specie": "Melipona (Melikerria) grandis",
+    "common_name": "Melipona (Melikerria) grandis",
+    "occurrence_area": "AC, AM, MT, RO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melikerria",
+    "specie": "Melipona (Melikerria) interrupta",
+    "common_name": "jandaíra, uruçu-mirim ou manduri",
+    "occurrence_area": "AP, AM, PA"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melikerria",
+    "specie": "Melipona (Melikerria) insularis",
+    "common_name": "Melipona (Melikerria) insularis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melikerria",
+    "specie": "Melipona (Melikerria) quinquefasciata",
+    "common_name": "mandaçaia-da-terra, mandaçaia-do-chão, uruçu-do-chão",
+    "occurrence_area": "CE, DF, ES, GO, MT, MS, MG, PR, RS, RJ, RO, SC, SP"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melikerria",
+    "specie": "Melipona (Melikerria) salti",
+    "common_name": "Melipona (Melikerria) salti",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Melikerria",
+    "specie": "Melipona (Melikerria) triplaridis",
+    "common_name": "Melipona (Melikerria) triplaridis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona/Michmelia",
+    "common_name": "Melipona/Michmelia",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) apiformis",
+    "common_name": "Melipona (Michmelia) apiformis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) belizeae",
+    "common_name": "Melipona (Michmelia) belizeae",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) boliviana",
+    "common_name": "Melipona (Michmelia) boliviana",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) capixaba",
+    "common_name": "uruçu-capixaba, uruçu-negra, uruçu-preta, pé-de-pau",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) colimana",
+    "common_name": "Melipona (Michmelia) colimana",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) eburnea",
+    "common_name": "uruçu-beiço",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) eburnea fuscopilosa",
+    "common_name": "uruçu-caboclo",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) fasciata",
+    "common_name": "Melipona (Michmelia) fasciata",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) fuscopilosa",
+    "common_name": "uruçú-roxa",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) indecisa",
+    "common_name": "Melipona (Michmelia) indecisa",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) lateralis",
+    "common_name": "pinto-de-velho, nariz-de-anta",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) mimetica",
+    "common_name": "Melipona (Michmelia) mimetica",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) panamica",
+    "common_name": "Melipona (Michmelia) panamica",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) scutellaris",
+    "common_name": "uruçu, uruçu-nordestina, uruçu-verdadeira",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) seminigra",
+    "common_name": "uruçu-boca-de-renda, jandaíra-amarela",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) seminigra abunensis",
+    "common_name": "Melipona (Michmelia) seminigra abunensis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) seminigra merrillae",
+    "common_name": "uruçu-boca-de-renda, jupará-grande",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) seminigra pernigra",
+    "common_name": "boca-de-renda-perna-preta",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) seminigra seminigra",
+    "common_name": "uruçu-boca-de-renda, jandaíra-amarela",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) solani",
+    "common_name": "Melipona (Michmelia) solani",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) trinitatis",
+    "common_name": "Melipona (Michmelia) trinitatis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) seminigra picea (Incertae sedis)",
+    "common_name": "Melipona",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) fuliginosa",
+    "common_name": "manduri-preto, uruçu, uruçu-boi, erereú-negra, turuçu, mel-de-anta, turuçu, Colômbia---reréu-negra, jandaira-amarela-amazonense",
+    "occurrence_area": "AC, AP, AM, BA, ES, GO, MA, MT, PA, PI, RO, RR, SP"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) fallax",
+    "common_name": "Melipona (Michmelia) fallax",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) titania",
+    "common_name": "Melipona (Michmelia) titania",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) melanoventer",
+    "common_name": "Melipona (Michmelia) melanoventer",
+    "occurrence_area": "AC, AM, MA, MT, PA, RO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) crinita",
+    "common_name": "jandaíra-amarela, uruçú-amarela-avermelhada",
+    "occurrence_area": "AC, AM, RO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) illota",
+    "common_name": "Melipona (Michmelia) illota",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) nebulosa",
+    "common_name": "jurupara-vermelha",
+    "occurrence_area": "AC, AM, PA"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) nigrescens",
+    "common_name": "Melipona (Michmelia) nigrescens",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) rufescens",
+    "common_name": "Melipona (Michmelia) rufescens",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) rufiventris",
+    "common_name": "uruçu-amarela, tuiuva, tujuba, bugia",
+    "occurrence_area": "BA, GO, MT, MS, MG, PI, SP, TO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) brachychaeta",
+    "common_name": "rufiventris",
+    "occurrence_area": "AC, MT, RO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) captiosa",
+    "common_name": "Melipona (Michmelia) captiosa",
+    "occurrence_area": "AC, AP, AM"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) cramptoni",
+    "common_name": "Melipona (Michmelia) cramptoni",
+    "occurrence_area": "RR"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) dubia",
+    "common_name": "guaraipo-amarela, uruçu-amarela, tuiuva, tujuba, bugia",
+    "occurrence_area": "AC, AM, RO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) flavolineata",
+    "common_name": "uruçú-vermelha, uruçú-amarela, jandaira-laranja",
+    "occurrence_area": "CE, MA, PA, TO"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) fulva",
+    "common_name": "Melipona (Michmelia) fulva",
+    "occurrence_area": "AP, AM, PA, RR"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) mondury",
+    "common_name": "mondury, bugia, tujuba, uruçu-amarela",
+    "occurrence_area": "BA, ES, MG, PR, RS, RJ, SC, SP"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) paraensis",
+    "common_name": "uruçu-boca-de-ralo, uruçu-amarela, tuiuva, tujuba, bugia",
+    "occurrence_area": "AP, AM, PA"
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) (Incertae sedis) rufiventris xantina",
+    "common_name": "Melipona (Michmelia) (Incertae sedis) rufiventris xantina",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "",
+    "specie": "Melipona cripta",
+    "common_name": "jandaíra",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Melipona",
+    "subgenus": "Michmelia",
+    "specie": "Melipona (Michmelia) nitidifrons (Unplaced Species)",
+    "common_name": "Melipona",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Mourella",
+    "subgenus": "",
+    "specie": "Mourella caerulea",
+    "common_name": "bieira, mirim-do-chão",
+    "occurrence_area": "PR, RS, SC"
+  },
+  {
+    "genus": "Nannotrigona",
+    "subgenus": "",
+    "specie": "Nannotrigona chapadana",
+    "common_name": "iraí",
+    "occurrence_area": "GO, MT"
+  },
+  {
+    "genus": "Nannotrigona",
+    "subgenus": "",
+    "specie": "Nannotrigona dutrae",
+    "common_name": "Nannotrigona dutrae",
+    "occurrence_area": "PA"
+  },
+  {
+    "genus": "Nannotrigona",
+    "subgenus": "",
+    "specie": "Nannotrigona melanocera",
+    "common_name": "Nannotrigona melanocera",
+    "occurrence_area": "AC, AM, RO"
+  },
+  {
+    "genus": "Nannotrigona",
+    "subgenus": "",
+    "specie": "Nannotrigona minuta",
+    "common_name": "Nannotrigona minuta",
+    "occurrence_area": "BR"
+  },
+  {
+    "genus": "Nannotrigona",
+    "subgenus": "",
+    "specie": "Nannotrigona punctata",
+    "common_name": "Nannotrigona punctata",
+    "occurrence_area": "AP, PA"
+  },
+  {
+    "genus": "Nannotrigona",
+    "subgenus": "",
+    "specie": "Nannotrigona schultzei",
+    "common_name": "Nannotrigona schultzei",
+    "occurrence_area": "AP, AM, PA"
+  },
+  {
+    "genus": "Nannotrigona",
+    "subgenus": "",
+    "specie": "Nannotrigona testaceicornis",
+    "common_name": "iraí",
+    "occurrence_area": "BA, ES, GO, MS, MG, PR, RS, RJ, SC, SP"
+  },
+  {
+    "genus": "Odontotrigona",
+    "subgenus": "",
+    "specie": "Odontotrigona haematoptera",
+    "common_name": "Odontotrigona haematoptera",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Oxytrigona",
+    "subgenus": "",
+    "specie": "Oxytrigona flaveola",
+    "common_name": "Oxytrigona flaveola",
+    "occurrence_area": "ES"
+  },
+  {
+    "genus": "Oxytrigona",
+    "subgenus": "",
+    "specie": "Oxytrigona ignis",
+    "common_name": "Oxytrigona ignis",
+    "occurrence_area": "AM, MA, PA"
+  },
+  {
+    "genus": "Oxytrigona",
+    "subgenus": "",
+    "specie": "Oxytrigona mulfordi",
+    "common_name": "Oxytrigona mulfordi",
+    "occurrence_area": "AC, RO"
+  },
+  {
+    "genus": "Oxytrigona",
+    "subgenus": "",
+    "specie": "Oxytrigona obscura",
+    "common_name": "sicaé-negra",
+    "occurrence_area": "AP, AM, PA, RO"
+  },
+  {
+    "genus": "Oxytrigona",
+    "subgenus": "",
+    "specie": "Oxytrigona tataira",
+    "common_name": "tataíra, cospe-fogo, caga-fogo, cagafogo, barra-fogo, botafogo, eitátá, ei-tata, eirá-tatá, atura, kangàrà-krá-kamrek",
+    "occurrence_area": "BA, ES, MS, MG, PR, RJ, SC, SP"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona catabolonota",
+    "common_name": "Paratrigona catabolonota",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona compsa",
+    "common_name": "Paratrigona compsa",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona crassicornis",
+    "common_name": "Paratrigona crassicornis",
+    "occurrence_area": "PA"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona euxanthospila",
+    "common_name": "Paratrigona euxanthospila",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona haeckeli",
+    "common_name": "Paratrigona haeckeli",
+    "occurrence_area": "MT, PA, RO"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona incerta",
+    "common_name": "Paratrigona incerta",
+    "occurrence_area": "MG, PB"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona lineata",
+    "common_name": "mirim-da-terra, jataí-da-terra",
+    "occurrence_area": "BA, CE, GO, MA, MT, MG, PR, PB, PA, PI, SP"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona lineatifrons",
+    "common_name": "Paratrigona lineatifrons",
+    "occurrence_area": "AM, PA"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona melanaspis",
+    "common_name": "Paratrigona melanaspis",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona myrmecophila",
+    "common_name": "Paratrigona myrmecophila",
+    "occurrence_area": "RO"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona nuda",
+    "common_name": "Paratrigona nuda",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona pacifica",
+    "common_name": "Paratrigona pacifica",
+    "occurrence_area": "AC, RO"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona pannosa",
+    "common_name": "Paratrigona pannosa",
+    "occurrence_area": "AP, AM, PA"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona peltata",
+    "common_name": "Paratrigona peltata",
+    "occurrence_area": "MA, PA"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona prosopiformis",
+    "common_name": "Paratrigona prosopiformis",
+    "occurrence_area": "AC, AM, PA, RO"
+  },
+  {
+    "genus": "Paratrigona",
+    "subgenus": "",
+    "specie": "Paratrigona subnuda",
+    "common_name": "jataí-da-terra, mirim-sem-brilho",
+    "occurrence_area": "BA, MG, PR, RS, RJ, SC, SP"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona ailyae",
+    "common_name": "cupira",
+    "occurrence_area": "AC, AM, CE, GO, MA, MT, MS, MG, PA, PI, RO, SP, TO"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona auripennis",
+    "common_name": "Partamona auripennis",
+    "occurrence_area": "AP, AM, PA"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona batesi",
+    "common_name": "Partamona batesi",
+    "occurrence_area": "AC, AM, RO"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona chapadicola",
+    "common_name": "boca-de-barro",
+    "occurrence_area": "MA, PA, PE, PI, TO"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona combinata",
+    "common_name": "ngài-kàk-ñy, myre-ti, hasî-mane-bakuki",
+    "occurrence_area": "AC, DF, GO, MA, MT, MS, MG, PA, RO, SP, TO"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona criptica",
+    "common_name": "Partamona criptica",
+    "occurrence_area": "ES, MG, RJ, SP"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona cupira",
+    "common_name": "cupira-preta, cupira, boca-de-sapo, cu-de-vaca",
+    "occurrence_area": "DF, GO, MS, MG, SP"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona epiphytophila",
+    "common_name": "Partamona epiphytophila",
+    "occurrence_area": "AC, AM"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona ferreirai",
+    "common_name": "Partamona ferreirai",
+    "occurrence_area": "AP, AM, PA, RR"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona gregaria",
+    "common_name": "Partamona gregaria",
+    "occurrence_area": "AM, PA"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona helleri",
+    "common_name": "boca-de-sapo",
+    "occurrence_area": "BA, ES, MG, PR, RJ, SC, SP"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona littoralis",
+    "common_name": "cupira-paraibana",
+    "occurrence_area": "PB, RN"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona mourei",
+    "common_name": "Partamona mourei",
+    "occurrence_area": "AM, PA, RR"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona mulata",
+    "common_name": "Partamona mulata",
+    "occurrence_area": "MT, MS"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona nhambiquara",
+    "common_name": "cupira",
+    "occurrence_area": "GO, MT, PA, RO"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona nigrior",
+    "common_name": "Partamona nigrior",
+    "occurrence_area": "RR"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona pearsoni",
+    "common_name": "Partamona pearsoni",
+    "occurrence_area": "AP, AM, MA, PA"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona rustica",
+    "common_name": "Partamona rustica",
+    "occurrence_area": "BA, MG"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona seridoensis",
+    "common_name": "Partamona seridoensis",
+    "occurrence_area": "CE, MA, PB, PE, RN"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona sooretamae",
+    "common_name": "Partamona sooretamae",
+    "occurrence_area": "BA, ES"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona subtilis",
+    "common_name": "Partamona subtilis",
+    "occurrence_area": "AC"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona testacea",
+    "common_name": "Partamona testacea",
+    "occurrence_area": "AC, AP, AM, CE, MA, PA, RO"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona vicina",
+    "common_name": "cupira, kangàrà-kàk-ti",
+    "occurrence_area": "AC, AP, AM, MT, PA, RO, RR"
+  },
+  {
+    "genus": "Partamona",
+    "subgenus": "",
+    "specie": "Partamona vitae",
+    "common_name": "Partamona vitae",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia alvarengai",
+    "common_name": "Plebeia alvarengai",
+    "occurrence_area": "AM, MT, PA, RO"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia catamarcensis",
+    "common_name": "Plebeia catamarcensis",
+    "occurrence_area": "MS, RS"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia droryana",
+    "common_name": "mirim, mirim-droriana",
+    "occurrence_area": "BA, ES, MG, PR, PE, RS, RJ, SC, SP"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia emerina",
+    "common_name": "timirim, mirim-emerina",
+    "occurrence_area": "PR, RS, SC, SP"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia flavocincta",
+    "common_name": "Plebeia flavocincta",
+    "occurrence_area": "BA, PB, PE, PI"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia grapiuna",
+    "common_name": "Plebeia grapiuna",
+    "occurrence_area": "BA"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia juliani",
+    "common_name": "Plebeia juliani",
+    "occurrence_area": "PR"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia lucii",
+    "common_name": "Plebeia lucii",
+    "occurrence_area": "ES, MG"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia margaritae",
+    "common_name": "Plebeia margaritae",
+    "occurrence_area": "AM, MT, RO"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia meridionalis",
+    "common_name": "Plebeia meridionalis",
+    "occurrence_area": "ES, MG, PR, RJ"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia minima",
+    "common_name": "Plebeia minima",
+    "occurrence_area": "AC, AP, AM, MA, MT, PA"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia mosquito",
+    "common_name": "Plebeia mosquito",
+    "occurrence_area": "MG, RJ"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia nigriceps",
+    "common_name": "mirim-negra",
+    "occurrence_area": "PR, RS, SC, SP"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia phrynostoma",
+    "common_name": "Plebeia phrynostoma",
+    "occurrence_area": "ES, MG"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia poecilochroa",
+    "common_name": "Plebeia poecilochroa",
+    "occurrence_area": "BA, ES, MG, PE"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia pugnax",
+    "common_name": "mirim-ponta-de-arvore, mirim-guerreira",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia remota",
+    "common_name": "mirim-guaçú",
+    "occurrence_area": "ES, MG, PR, RS, SC, SP"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia remota rufis",
+    "common_name": "mirim-guaçú-amarela",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia saiqui",
+    "common_name": "saiqui, jatí, mosquito, mirim-saiqui",
+    "occurrence_area": "MG, PR, RS, RJ, SC, SP"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia variicolor",
+    "common_name": "Plebeia variicolor",
+    "occurrence_area": "AM, PA, RO"
+  },
+  {
+    "genus": "Plebeia",
+    "subgenus": "",
+    "specie": "Plebeia wittmanni",
+    "common_name": "Plebeia wittmanni",
+    "occurrence_area": "RS"
+  },
+  {
+    "genus": "Ptilotrigona",
+    "subgenus": "",
+    "specie": "Ptilotrigona lurida",
+    "common_name": "aramá, araman, borá-boi, borá-cavalo, borá, tataíra-grande, abelha-piranha, moça-branca",
+    "occurrence_area": "AC, AP, AM, MA, MT, PA, RO, RR"
+  },
+  {
+    "genus": "Ptilotrigona",
+    "subgenus": "",
+    "specie": "Ptilotrigona perenae",
+    "common_name": "Ptilotrigona perenae",
+    "occurrence_area": "AC, AM"
+  },
+  {
+    "genus": "Scaptotrigona",
+    "subgenus": "",
+    "specie": "Scaptotrigona affabra",
+    "common_name": "Scaptotrigona affabra",
+    "occurrence_area": "PA, RO"
+  },
+  {
+    "genus": "Scaptotrigona",
+    "subgenus": "",
+    "specie": "Scaptotrigona bipunctata",
+    "common_name": "tubuna, canudo, tubuna, tapesuá",
+    "occurrence_area": "AC, CE, MA, MG, PR, PA, RS, RJ, SC"
+  },
+  {
+    "genus": "Scaptotrigona",
+    "subgenus": "",
+    "specie": "Scaptotrigona depilis",
+    "common_name": "canudo, tubiba, torce-cabelos, tombuna, mandaguay, tapezuà, mandaguari",
+    "occurrence_area": "MS, MG, PR, RS, SP"
+  },
+  {
+    "genus": "Scaptotrigona",
+    "subgenus": "",
+    "specie": "Scaptotrigona fulvicutis",
+    "common_name": "Scaptotrigona fulvicutis",
+    "occurrence_area": "AP, AM"
+  },
+  {
+    "genus": "Scaptotrigona",
+    "subgenus": "",
+    "specie": "Scaptotrigona nigrohirta",
+    "common_name": "canudo",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Scaptotrigona",
+    "subgenus": "",
+    "specie": "Scaptotrigona polysticta",
+    "common_name": "benjoi, benjoim, sanharão-porco, bijui, mijui, bijui, bui-kaiaki, abelha-canudão, imrê-ti",
+    "occurrence_area": "AC, GO, MA, MT, MG, PA, PI, RO, SP, TO"
+  },
+  {
+    "genus": "Scaptotrigona",
+    "subgenus": "",
+    "specie": "Scaptotrigona postica",
+    "common_name": "mandaguari, tibuna, timba-amarela",
+    "occurrence_area": "BA, CE, GO, MA, MT, MS, MG, PA, PE, PI, SP, TO"
+  },
+  {
+    "genus": "Scaptotrigona",
+    "subgenus": "",
+    "specie": "Scaptotrigona tricolorata",
+    "common_name": "Scaptotrigona tricolorata",
+    "occurrence_area": "AM, MT, RO"
+  },
+  {
+    "genus": "Scaptotrigona",
+    "subgenus": "",
+    "specie": "Scaptotrigona tubiba",
+    "common_name": "tubiba, tapiaçú, tubi, tubim, tapissuá, tubi-bravo, boca-rasa, tuibá",
+    "occurrence_area": "AP, BA, CE, MA, MG, PA, PE, PI, RJ, SE, SP"
+  },
+  {
+    "genus": "Scaptotrigona",
+    "subgenus": "",
+    "specie": "Scaptotrigona xanthotricha",
+    "common_name": "mandaguari-amarela, trompeta, mandaguari-amarelo, tujumirim, mandagoari, abelha-fedente",
+    "occurrence_area": "BA, ES, MG, PR, RJ, SC, SP"
+  },
+  {
+    "genus": "Scaura",
+    "subgenus": "",
+    "specie": "Gênero:Scaura/",
+    "common_name": "Scaura/",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Scaura",
+    "subgenus": "",
+    "specie": "Scaura atlantica",
+    "common_name": "Scaura atlantica",
+    "occurrence_area": "BA, ES, MG"
+  },
+  {
+    "genus": "Scaura",
+    "subgenus": "",
+    "specie": "Scaura latitarsis",
+    "common_name": "jataí-negra, pegoncito, sharabata, txashkû-mexupa",
+    "occurrence_area": "AC, AP, AM, CE, MT, MG, PR, PA, RJ, RO, SP"
+  },
+  {
+    "genus": "Scaura",
+    "subgenus": "",
+    "specie": "Scaura longula",
+    "common_name": "jataí-preta, ramichi-negra-grande, mehnô-rã-tyk",
+    "occurrence_area": "AP, AM, BA, GO, MA, MT, MG, PA, SP"
+  },
+  {
+    "genus": "Scaura",
+    "subgenus": "",
+    "specie": "Scaura tenuis",
+    "common_name": "ramichi-negra",
+    "occurrence_area": "AM, MT, PA"
+  },
+  {
+    "genus": "Schwarziana",
+    "subgenus": "",
+    "specie": "Gênero:Schwarziana/",
+    "common_name": "Schwarziana/",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Schwarziana",
+    "subgenus": "",
+    "specie": "Schwarziana mourei",
+    "common_name": "Schwarziana mourei",
+    "occurrence_area": "GO, MS, MG, TO"
+  },
+  {
+    "genus": "Schwarziana",
+    "subgenus": "",
+    "specie": "Schwarziana quadripunctata",
+    "common_name": "guiruçú, iruçu, mel-do-chão, abelha-mulata, guiruçu, mulatinha, abelha-do-chão, papaterra, irussú-mineiro, irussú-do-chão, eira-ihvihgwih, doncellita, señorita, mombuca-mirim, mombuquinha",
+    "occurrence_area": "BA, ES, GO, MG, PR, RS, RJ, SC, SP"
+  },
+  {
+    "genus": "Schwarzula",
+    "subgenus": "",
+    "specie": "Gênero:Schwarzula/",
+    "common_name": "Schwarzula/",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Schwarzula",
+    "subgenus": "",
+    "specie": "Schwarzula coccidophila",
+    "common_name": "Schwarzula coccidophila",
+    "occurrence_area": "AC, AM, PA, RO"
+  },
+  {
+    "genus": "Schwarzula",
+    "subgenus": "",
+    "specie": "Schwarzula timida",
+    "common_name": "lambe-olhos, frecheira, mosquito-do-ouvido",
+    "occurrence_area": "AC, AM, MT, MS, MG, PA, RO, SP"
+  },
+  {
+    "genus": "Tetragona",
+    "subgenus": "",
+    "specie": "Gênero:Tetragona/",
+    "common_name": "Tetragona/",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Tetragona",
+    "subgenus": "",
+    "specie": "Tetragona beebei",
+    "common_name": "Tetragona beebei",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Tetragona",
+    "subgenus": "",
+    "specie": "Tetragona clavipes",
+    "common_name": "borá, vorá, vamos-embora, voraz, i-kàikà",
+    "occurrence_area": "AC, AP, AM, BA, ES, GO, MA, MT, MS, MG, PR, PA, PI, RS, RJ, SC, SP"
+  },
+  {
+    "genus": "Tetragona",
+    "subgenus": "",
+    "specie": "Tetragona dorsalis",
+    "common_name": "borá-bico-de-vidro, tôtn-my, tôtn-my're",
+    "occurrence_area": "AP, AM, CE, MA, MT, PA, TO"
+  },
+  {
+    "genus": "Tetragona",
+    "subgenus": "",
+    "specie": "Tetragona essequiboensis",
+    "common_name": "Tetragona essequiboensis",
+    "occurrence_area": "AM, RO"
+  },
+  {
+    "genus": "Tetragona",
+    "subgenus": "",
+    "specie": "Tetragona goettei",
+    "common_name": "mehr-xi-we'i, tataíra-pequena, shawa-puiki-buná",
+    "occurrence_area": "AC, AM, MT, PA, RO"
+  },
+  {
+    "genus": "Tetragona",
+    "subgenus": "",
+    "specie": "Tetragona handlirschii",
+    "common_name": "Tetragona handlirschii",
+    "occurrence_area": "AP, AM, PA"
+  },
+  {
+    "genus": "Tetragona",
+    "subgenus": "",
+    "specie": "Tetragona kaieteurensis",
+    "common_name": "Tetragona kaieteurensis",
+    "occurrence_area": "AM, PA"
+  },
+  {
+    "genus": "Tetragona",
+    "subgenus": "",
+    "specie": "Tetragona quadrangula",
+    "common_name": "borá, borá-de-chão, vorá, menire-udja",
+    "occurrence_area": "GO, MA, MT, PA, SP, TO"
+  },
+  {
+    "genus": "Tetragona",
+    "subgenus": "",
+    "specie": "Tetragona truncata",
+    "common_name": "Tetragona truncata",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Tetragonisca",
+    "subgenus": "",
+    "specie": "Tetragonisca angustula angustula",
+    "common_name": "jataí, jatí, alemãozinha, maria-seca, virginitas, virgencitas, angelitas, abelhas-ouro, mariita, mariola, jatai-verdadeira, españolita, ingleses, mosquitinha-verdadeira, my-krwàt, jimerito, ramichi-amarilla, moça-branca, jatahy-amarello, trez-portas, jatihy, jatai-piqueno, jatay, jaty, jatahy, mosquito-amarelo",
+    "occurrence_area": "AP, AM, BA, CE, ES, GO, MA, MT, MS, MG, PR, PB, PA, PE, RS, RJ, RR, SC, SP"
+  },
+  {
+    "genus": "Tetragonisca",
+    "subgenus": "",
+    "specie": "Tetragonisca angustula fiebrigii",
+    "common_name": "jatí, yatei, yatai, yateí, jateí, abelhas-ouro, jataí-do-sul",
+    "occurrence_area": "MT, MS, PR, RS, SP"
+  },
+  {
+    "genus": "Tetragonisca",
+    "subgenus": "",
+    "specie": "Tetragonisca iridipennis",
+    "common_name": "Tetragonisca iridipennis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Tetragonisca",
+    "subgenus": "",
+    "specie": "Tetragonisca weyrauchi",
+    "common_name": "jataí-acreana, pusebûki",
+    "occurrence_area": "AC, MT, RO"
+  },
+  {
+    "genus": "Tetragonisca",
+    "subgenus": "",
+    "specie": "Tetragonisca buchwaldi",
+    "common_name": "Tetragonisca buchwaldi",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Trichotrigona",
+    "subgenus": "",
+    "specie": "Trichotrigona extranea",
+    "common_name": "Trichotrigona extranea",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona albipennis",
+    "common_name": "Trigona albipennis",
+    "occurrence_area": "AC, AM, MT, PA, RO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona amalthea",
+    "common_name": "jandaíra-preta, sanharão-preta, abejona, pegone, morrocuje-negro, cabezunga, pozo-de-tacú",
+    "occurrence_area": "AM, MT, RO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona amazonensis",
+    "common_name": "xupé-grande, xupé-mangangá, mangangá, txashku-buiki, arapuá-preto-médio, abelha-cu-de-vaca, nawa-bakû, ku-krãi-ti, abeja-arambaso, amo, corta-pelo",
+    "occurrence_area": "AC, AM, MT, PA, RO, TO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona branneri",
+    "common_name": "guaxupé, corta-cabelo, arapuá, irapuá, pegon, mehñy-tyk, nawa-bakû, topoé-negra, mbulo-oni, kankantii-oni",
+    "occurrence_area": "AM, GO, MA, MT, PA, RO, TO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona chanchamayoensis",
+    "common_name": "arapuá-amarela-menor, cupira, imrê-ti-re",
+    "occurrence_area": "AC, AM, MT, PA, RO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona cilipes",
+    "common_name": "angelita, buhnide, mehnôrá-kamrek",
+    "occurrence_area": "AC, AP, AM, GO, MT, PA, RO, RR"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona crassipes",
+    "common_name": "aramá, sombra-de-sucha, fisi-wasi-wasi-oni",
+    "occurrence_area": "AP, AM, MT, PA, RO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona dallatorreana",
+    "common_name": "kukraire, tu, sicae-amarilla-chica",
+    "occurrence_area": "AP, AM, MA, MT, PA, RO, TO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona dimidiata",
+    "common_name": "Trigona dimidiata",
+    "occurrence_area": "AM, MT, PA, RO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona guianae",
+    "common_name": "txashkû-taxipa, cu-de-vaca-vermelha, djô",
+    "occurrence_area": "AC, AP, AM, CE, MT, PB, PA, RO, TO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona fulviventris",
+    "common_name": "bunda-de-vaca, abelha-cachorro",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona fuscipennis",
+    "common_name": "abelha-brava",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona hyalinata",
+    "common_name": "xupé ou guaxupé, abelha-brava, timba-preta, abelha-cachorro, arapuá",
+    "occurrence_area": "BA, DF, GO, MA, MT, MS, MG, PA, PI, SP, TO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona hypogea",
+    "common_name": "mombuca-carniceira",
+    "occurrence_area": "AM, MA, MT, PA, SP"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona lacteipennis",
+    "common_name": "sombra-de-sucha, mehnôrá-kamrek",
+    "occurrence_area": "AC, AM, GO, MT, PA, RO, RR"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona pallens",
+    "common_name": "olho-de-vidro, cutia-o-de-purga, colatakwa, tuu, myre, oloman-oni, lebi, redi-oni",
+    "occurrence_area": "AC, AP, AM, GO, MA, PA, RO, RR, TO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona pellucida",
+    "common_name": "Trigona pellucida",
+    "occurrence_area": "MT, PA, RO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona recursa",
+    "common_name": "feiticeira, vamos-embôra, vamo-nos-embora, puka-kam-mehn",
+    "occurrence_area": "AC, AM, CE, GO, MA, MT, MG, PA, PI, RO, SP, TO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona sesquipedalis",
+    "common_name": "Trigona sesquipedalis",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona silvestriana",
+    "common_name": "abelha-sanharó-e-sanharó",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona spinipes",
+    "common_name": "irapuã, irapuá, abelha-irapuá, abelha-irapuã, arapuá, arapuã, aripuá, irapuá, arapica, arapu, axupé, caapuã, cabapuã, cupira, urapuca, guaxupé, enrola-cabelo, torce-cabelo, mel-de-cachorro, abelha-de-cachorro-e-abelha-cachorro",
+    "occurrence_area": "AL, BA, CE, ES, GO, MA, MT, MS, MG, PR, PB, PA, PE, PI, RN, RS, RJ, SC, SE, SP, TO"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona truculenta",
+    "common_name": "sanharão, sanharó",
+    "occurrence_area": "AC, AP, AM, BA, GO, MA, MT, MS, MG, PA, RO, SP"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona williana",
+    "common_name": "kajawo-dawa",
+    "occurrence_area": "AC, AP, AM, MA, MT, PA, RO, RR"
+  },
+  {
+    "genus": "Trigona",
+    "subgenus": "",
+    "specie": "Trigona stigma",
+    "common_name": "Trigona stigma",
+    "occurrence_area": ""
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca bidentata",
+    "common_name": "Trigonisca bidentata",
+    "occurrence_area": "RO"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca ceophloei",
+    "common_name": "Trigonisca ceophloei",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca dobzhanskyi",
+    "common_name": "Trigonisca dobzhanskyi",
+    "occurrence_area": "AM, PA"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca duckei",
+    "common_name": "lambe-olhos",
+    "occurrence_area": "AM, CE, MA, MT, PA, RR"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca extrema",
+    "common_name": "Trigonisca extrema",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca flavicans",
+    "common_name": "Trigonisca flavicans",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca fraissei",
+    "common_name": "Trigonisca fraissei",
+    "occurrence_area": "AM, MT, PA, RO"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca graeffei",
+    "common_name": "Trigonisca graeffei",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca hirticornis",
+    "common_name": "Trigonisca hirticornis",
+    "occurrence_area": "RO"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca intermedia",
+    "common_name": "Trigonisca intermedia",
+    "occurrence_area": "BA, ES, MT, MG, SP"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca meridionalis",
+    "common_name": "abelha-meridional",
+    "occurrence_area": "MA, MT, MG, PA, SP"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca nataliae",
+    "common_name": "Trigonisca nataliae",
+    "occurrence_area": "MA, MT, PA, RO"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca pediculana",
+    "common_name": "Trigonisca pediculana",
+    "occurrence_area": "BA, CE, MA, PB"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca unidentata",
+    "common_name": "Trigonisca unidentata",
+    "occurrence_area": "AM"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca variegatifrons",
+    "common_name": "Trigonisca variegatifrons",
+    "occurrence_area": "MT, PA, RO"
+  },
+  {
+    "genus": "Trigonisca",
+    "subgenus": "",
+    "specie": "Trigonisca vitrifrons",
+    "common_name": "Trigonisca vitrifrons",
+    "occurrence_area": "AM, PA"
+  }
+]
