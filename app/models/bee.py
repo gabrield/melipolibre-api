@@ -1,6 +1,6 @@
-from database import db
+from app.database import db
 #from sqlalchemy_utils import ScalarListType
-from models.base import BaseModel
+from .base import BaseModel
 
 class BeeModel(db.Model, BaseModel):
     __tablename__ = 'bees'

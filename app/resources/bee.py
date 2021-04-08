@@ -1,6 +1,6 @@
 from flask_restful import Resource, reqparse
 import json
-from models.bee import BeeModel
+from ..models.bee import BeeModel
 
 class Bees(Resource):
         params = reqparse.RequestParser()
