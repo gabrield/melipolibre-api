@@ -5,9 +5,9 @@ from .base import BaseModel
 class BeeModel(db.Model, BaseModel):
     __tablename__ = 'bees'
     id              = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    genus           = db.Column(db.String(30))
-    subgenus        = db.Column(db.String(30))
-    specie          = db.Column(db.String(30))
+    genus           = db.Column(db.String(60))
+    subgenus        = db.Column(db.String(60))
+    specie          = db.Column(db.String(60))
     common_name     = db.Column(db.String(150))
     occurrence_area = db.Column(db.String(150))
 
