@@ -28,5 +28,5 @@ api.add_resource(Bees, '/bees')
 #api.add_resource(Bee, '/bee')
 
 
-#if __name__ == '__main__':
-#    app.run()
+if __name__ == '__main__':
+    app.run()
