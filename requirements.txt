@@ -12,3 +12,6 @@ six==1.15.0
 SQLAlchemy==1.4.4
 SQLAlchemy-Utils==0.36.8
 Werkzeug==1.0.1
+psycopg2-binary
+gunicorn
+requests
