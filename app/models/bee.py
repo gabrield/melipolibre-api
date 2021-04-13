@@ -8,7 +8,7 @@ class BeeModel(db.Model, BaseModel):
     genus           = db.Column(db.String(60))
     subgenus        = db.Column(db.String(60))
     specie          = db.Column(db.String(60))
-    common_name     = db.Column(db.String(150))
+    common_name     = db.Column(db.String(200))
     occurrence_area = db.Column(db.String(150))
 
 
