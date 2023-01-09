@@ -7,8 +7,10 @@ from app import create_app
 config_name = os.getenv('APP_SETTINGS')
 app = create_app(config_name)
 api = Api(app)
+
+
+
 api.add_resource(Bees, '/bees')
-#bee resources
 
     
 

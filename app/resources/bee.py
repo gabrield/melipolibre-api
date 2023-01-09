@@ -1,6 +1,6 @@
 import json
 from flask_restful import Resource, reqparse
-from app.models.bee_model import BeeModel
+from app.models.bee_model import Bee
 
 class Bees(Resource):
         params = reqparse.RequestParser()
@@ -21,17 +21,17 @@ class Bees(Resource):
 
             #return all bees if no parameter is passed
             if (len(valid_params) == 0):
-                return {'bees': [bee.json() for bee in BeeModel.query.all()]}
+                return {'bees': [bee.json() for bee in Bee.query.all()]}
 
-            query = BeeModel.query
+            query = Bee.query
  
             if valid_params.get('genus'):
-                query = query.filter(BeeModel.genus.like(self.normalize(valid_params["genus"])))
+                query = query.filter(Bee.genus.like(self.normalize(valid_params["genus"])))
             if valid_params.get('subgenus'):
-                query = query.filter(BeeModel.subgenus.like(self.normalize(valid_params["subgenus"])))
+                query = query.filter(Bee.subgenus.like(self.normalize(valid_params["subgenus"])))
             if valid_params.get('specie'):
-                query = query.filter(BeeModel.specie.like(self.normalize(valid_params["specie"])))
+                query = query.filter(Bee.specie.like(self.normalize(valid_params["specie"])))
             if valid_params.get('common_name'):
-                query = query.filter(BeeModel.common_name.like(self.normalize(valid_params["common_name"])))
+                query = query.filter(Bee.common_name.like(self.normalize(valid_params["common_name"])))
  
             return {"bees": [bee.json() for bee in query]}

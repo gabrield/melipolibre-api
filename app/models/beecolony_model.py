@@ -10,12 +10,12 @@ class BeehiveType(enum.Enum):
     WF     = 4
     UNKNOW = 5
 
-class BeeColonyModel(db.Model, BaseModel):
+class BeeColony(db.Model, BaseModel):
     __tablename__ = 'beecolony'
     id              = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    bee_id          = db.Colum(db.Integer, required=True)
-    beekeeper_id    = db.Colum(db.Integer, required=True)
-    meliponary_id   = db.Colum(db.Integer)
+    bee_id          = db.Column(db.Integer, db.ForeignKey('bee.id'))
+    beekeeper_id    = db.Column(db.Integer, db.ForeignKey('beepeeker.id'))
+    meliponary_id   = db.Column(db.Integer, db.ForeignKey('meliponary.id'))
     hive_type       = db.Column(db.Enum(BeehiveType))
 
 

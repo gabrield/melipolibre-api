@@ -1,7 +1,7 @@
 from app.database import db
 from app.models.base import BaseModel
 
-class BeeModel(db.Model, BaseModel):
+class Bee(db.Model, BaseModel):
     __tablename__ = 'bee'
     id              = db.Column(db.Integer, primary_key=True, autoincrement=True)
     genus           = db.Column(db.String(30))

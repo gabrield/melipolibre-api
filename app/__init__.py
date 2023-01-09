@@ -10,10 +10,10 @@ import json
 
 
 
-def create_app(config_name):
+def create_app():
     app = Flask(__name__, instance_relative_config=True)
-
-    app.config.from_object(app_config[config_name])
+    config_name = os.getenv('APP_SETTINGS')
+    app.config.from_object(app_config[config_name] or app_config['development'])
     from app.database import db
     db.init_app(app)
     
