@@ -1,6 +1,6 @@
-from flask_restful import Resource, reqparse
 import json
-from ..models.bee import BeeModel
+from flask_restful import Resource, reqparse
+from app.models.bee_model import BeeModel
 
 class Bees(Resource):
         params = reqparse.RequestParser()
@@ -8,7 +8,6 @@ class Bees(Resource):
         params.add_argument('subgenus', type=str)
         params.add_argument('specie', type=str)
         params.add_argument('common_name', type=str)
-        params.add_argument('occurrence_area', type=str)
 
         @staticmethod
         def normalize(val: str):
@@ -19,6 +18,7 @@ class Bees(Resource):
             
             #filter only path params which are not None
             valid_params = {key:params[key] for key in params if params[key] is not None}
+
             #return all bees if no parameter is passed
             if (len(valid_params) == 0):
                 return {'bees': [bee.json() for bee in BeeModel.query.all()]}
@@ -33,7 +33,5 @@ class Bees(Resource):
                 query = query.filter(BeeModel.specie.like(self.normalize(valid_params["specie"])))
             if valid_params.get('common_name'):
                 query = query.filter(BeeModel.common_name.like(self.normalize(valid_params["common_name"])))
-            if valid_params.get('occurrence_area'):
-                query = query.filter(BeeModel.occurrence_area.like(self.normalize(valid_params["occurrence_area"])))
  
             return {"bees": [bee.json() for bee in query]}
