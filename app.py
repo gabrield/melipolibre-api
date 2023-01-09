@@ -4,16 +4,10 @@ from app.resources.bee import Bees
 from app import create_app
 
 
-config_name = os.getenv('APP_SETTINGS')
-app = create_app(config_name)
+app = create_app()
 api = Api(app)
 
-
-
 api.add_resource(Bees, '/bees')
-
-    
-
 
 if __name__ == '__main__':
     app.run()

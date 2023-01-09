@@ -1,10 +1,9 @@
-# nativasf/__init__.py
+# melipolibre-api/__init__.py
 import os
 from flask import Flask
-
 # local import
 from instance.config import app_config
-from app.models.bee_model import BeeModel
+from app.models.bee_model import Bee
 from app.resources.bee import Bees
 import json
 
@@ -23,10 +22,10 @@ def create_app():
     def create_database():
         db.drop_all()
         db.create_all()
-        with open(os.path.dirname(os.path.abspath(__file__)) +\
+        with open(os.path.dirname(os.path.abspath(__file__)) + \
             '/data/asf_list.json') as bee_file:
             bees =  json.load(bee_file)
-            db.session.bulk_save_objects([BeeModel(**bee) for bee in bees])
+            db.session.bulk_save_objects([Bee(**bee) for bee in bees])
             db.session.commit()
 
     return app

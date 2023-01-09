@@ -8,6 +8,8 @@ class BeeKeeper(db.Model, BaseModel):
     email           = db.Column(db.String(64), nullable=False)
     password        = db.Column(db.String(30), nullable=False)
     api_key         = db.Column(db.String(150), nullable=False)
-    #bees            = db.relationship("BeeColonyModel", backref='beecolony')
+    meliponaries    = db.relationship('Meliponary', backref='beekeeper')
+    hives           = db.relationship('BeeHive', backref='beekeeper')
+
 
 
