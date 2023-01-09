@@ -9,3 +9,7 @@ class Bee(db.Model, BaseModel):
     specie          = db.Column(db.String(30), nullable=False)
     common_name     = db.Column(db.Unicode(150))
 
+
+     def __repr__(self):
+        return f'<Bee "{self.specie}">'
+

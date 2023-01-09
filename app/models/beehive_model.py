@@ -17,4 +17,10 @@ class BeeHive(db.Model, BaseModel):
     beekeeper_id    = db.Column(db.Integer, db.ForeignKey('beekeeper.id'), nullable=False)
     meliponary_id   = db.Column(db.Integer, db.ForeignKey('meliponary.id'), nullable=False)
     hive_type       = db.Column(db.Enum(BeeHiveType), nullable=False)
-    bee             =  db.relationship('Bee', backref='bee')
+    bee             = db.relationship('Bee', backref='bee')
+
+    def __repr__(self):
+        return f'<BeeHive "{self.bee.specie}">'
+
+
+

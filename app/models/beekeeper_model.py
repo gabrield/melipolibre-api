@@ -11,5 +11,8 @@ class BeeKeeper(db.Model, BaseModel):
     meliponaries    = db.relationship('Meliponary', backref='beekeeper')
     hives           = db.relationship('BeeHive', backref='beekeeper')
 
+    def __repr__(self):
+        return f'<BeeKeeper "{self.name}">'
+
 
 
