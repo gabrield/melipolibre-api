@@ -8,7 +8,9 @@ class BeeHiveType(enum.Enum):
     BAU    = 2
     AF     = 3
     WF     = 4
-    UNKNOW = 5
+    LANGSTROTH = 5
+    UNKNOW = 6
+
 
 class BeeHive(db.Model, BaseModel):
     __tablename__ = 'beehive'

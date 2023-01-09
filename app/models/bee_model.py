@@ -10,6 +10,6 @@ class Bee(db.Model, BaseModel):
     common_name     = db.Column(db.Unicode(150))
 
 
-     def __repr__(self):
+    def __repr__(self):
         return f'<Bee "{self.specie}">'
 
