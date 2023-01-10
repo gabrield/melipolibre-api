@@ -17,23 +17,23 @@ with open('app/data/asf_list.json') as bee_file:
     db.session.commit()
 
 bk1 = BeeKeeper(name='Gabs', email='gabs@abelha.cc', password='123', api_key='342sdvsfds')
-db.session.add(bk1)
+bk2 = BeeKeeper(name='Carlo', email='carlo@abelha.cc', password='123', api_key='342sdvsfds')
+
+db.session.add(bk1, bk2)
 db.session.commit()
 
 bee1 = Bee.query.filter(Bee.specie.contains('angustula angustula')).first()
 bee2 = Bee.query.filter(Bee.specie.contains('Melipona')).first()
 
-mlp1 = Meliponary(name='Casa 1', address='Felipe Camarão', beekeeper=bk1)
-mlp2 = Meliponary(name='Casa 2', address='Felipe Camarão 1', beekeeper=bk1)
+mlp1 = Meliponary(name='Meliponario 1', address='Felipe Camarão', beekeeper=bk1)
+mlp2 = Meliponary(name='Meliponario 2', address='Felipe Camarão 1', beekeeper=bk1)
 
 hive1 = BeeHive(bee=bee1, beekeeper=bk1, meliponary=mlp1, hive_type=BeeHiveType.INPA)
 hive2 = BeeHive(bee=bee2, beekeeper=bk1, meliponary=mlp2, hive_type=BeeHiveType.LANGSTROTH)
-hive3 = BeeHive(bee=bee2, beekeeper=bk1, meliponary=mlp2, hive_type=BeeHiveType.WF)
+hive3 = BeeHive(bee=bee2, beekeeper=bk2, meliponary=mlp2, hive_type=BeeHiveType.WF)
 
-db.session.add(mlp1)
-db.session.add(mlp2)
-db.session.add(hive1)
-db.session.add(hive2)
+db.session.add_all([mlp1, mlp2])
+db.session.add_all([hive1, hive2, hive3])
 db.session.commit()
 print(bk1.hives)
 print(mlp1.hives)
@@ -42,6 +42,8 @@ print(hive1.meliponary == mlp1)
 print(hive1.meliponary == mlp2)
 print(hive1.beekeeper)
 print(hive2.beekeeper)
+print(hive3.beekeeper)
+
 
 print()
 

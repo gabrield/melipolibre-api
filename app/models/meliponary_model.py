@@ -7,9 +7,7 @@ class Meliponary(db.Model, BaseModel):
     beekeeper_id    = db.Column(db.Integer, db.ForeignKey("beekeeper.id"), nullable=False)
     name            = db.Column(db.String(128), nullable=False)
     address         = db.Column(db.String(64), nullable=False)
- 
     hives           = db.relationship("BeeHive", backref='meliponary')
-    db.relationship("BeeHive", backref='beehive')
 
 
     def __repr__(self):
