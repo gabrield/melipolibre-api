@@ -7,11 +7,11 @@ from app.filters.valid_params import valid_req_params
 
 class BeeKeeperRegister(Resource):
         params = reqparse.RequestParser()
-        params.add_argument('name', type=str, required=True, help='name required', \
+        params.add_argument('name', type=str, required=True, help='Name required!', \
             trim=True)
-        params.add_argument('email', type=inputs.email, required=True, \
-            help="valid email address required", trim=True)
-        params.add_argument('password', type=str, required=True, help="password required", \
+        params.add_argument('email', type=inputs.email(), required=True, \
+            help="An valid email address required!", trim=True)
+        params.add_argument('password', type=str, required=True, help="Password required!", \
             trim=True)
         def get(self):
             params = BeeKeeperRegister.params.parse_args()
