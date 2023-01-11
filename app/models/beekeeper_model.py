@@ -1,5 +1,5 @@
 from app.database import db
-from app.models.base import BaseModel
+from app.models.base_model import BaseModel
 
 class BeeKeeperModel(db.Model, BaseModel):
     __tablename__ = 'beekeepers'

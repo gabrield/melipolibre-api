@@ -1,6 +1,6 @@
 # melipolibre-api/__init__.py
 import os
-from flask import Flask
+from flask import Flask, Blueprint
 # local import
 from instance.config import app_config
 from app.models.bee_model import BeeModel
@@ -23,9 +23,9 @@ def create_app():
         db.drop_all()
         db.create_all()
         with open(os.path.dirname(os.path.abspath(__file__)) + \
-            '/data/asf_list.json') as bee_file:
+            '/data/asf_list.json', encoding='utf-8') as bee_file:
             bees =  json.load(bee_file)
-            db.session.bulk_save_objects([Bee(**bee) for bee in bees])
+            db.session.bulk_save_objects([BeeModel(**bee) for bee in bees])
             db.session.commit()
 
     return app

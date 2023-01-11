@@ -1,6 +1,6 @@
 from sqlalchemy import ForeignKey
 from app.database import db
-from app.models.base import BaseModel
+from app.models.base_model import BaseModel
 import enum
  
 class BeeHiveType(enum.Enum):
