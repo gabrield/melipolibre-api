@@ -12,14 +12,14 @@ class BeeHiveType(enum.Enum):
     UNKNOW = 6
 
 
-class BeeHive(db.Model, BaseModel):
-    __tablename__ = 'beehive'
+class BeeHiveModel(db.Model, BaseModel):
+    __tablename__ = 'beehives'
     id              = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    bee_id          = db.Column(db.Integer, db.ForeignKey('bee.id'), nullable=False)
-    beekeeper_id    = db.Column(db.Integer, db.ForeignKey('beekeeper.id'), nullable=False)
-    meliponary_id   = db.Column(db.Integer, db.ForeignKey('meliponary.id'), nullable=False)
+    bee_id          = db.Column(db.Integer, db.ForeignKey('bees.id'), nullable=False)
+    beekeeper_id    = db.Column(db.Integer, db.ForeignKey('beekeepers.id'), nullable=False)
+    meliponary_id   = db.Column(db.Integer, db.ForeignKey('meliponaries.id'), nullable=False)
     hive_type       = db.Column(db.Enum(BeeHiveType), nullable=False)
-    bee             = db.relationship('Bee', backref='bee')
+    bee             = db.relationship('BeeModel', backref='bee')
 
     def __repr__(self):
         return f'<BeeHive "{self.bee.specie}">'

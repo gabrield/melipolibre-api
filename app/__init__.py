@@ -3,7 +3,7 @@ import os
 from flask import Flask
 # local import
 from instance.config import app_config
-from app.models.bee_model import Bee
+from app.models.bee_model import BeeModel
 from app.resources.bee import Bees
 import json
 
