@@ -1,5 +1,8 @@
 from app.database import db
 from app.models.base_model import BaseModel
+from app.models.meliponary_model import MeliponaryModel
+from app.models.beehive_model import BeeHiveModel
+
 
 class BeeKeeperModel(db.Model, BaseModel):
     __tablename__ = 'beekeepers'

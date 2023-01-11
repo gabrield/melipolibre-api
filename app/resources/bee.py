@@ -1,6 +1,7 @@
 import json
 from flask_restx import Resource, reqparse
 from app.models.bee_model import BeeModel
+from app.filters.valid_params import valid_req_params
 
 
 class Bees(Resource):
@@ -14,7 +15,7 @@ class Bees(Resource):
             params = Bees.params.parse_args()
             
             #filter only valid params which are not None
-            valid_params = {key:params[key] for key in params if params[key] is not None}
+            valid_params = valid_req_params(params)
 
             #return all bees if no parameter is passed
             if len(valid_params) == 0:
