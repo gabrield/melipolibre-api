@@ -1,7 +1,9 @@
+
+import enum
 from sqlalchemy import ForeignKey
 from app.database import db
 from app.models.base_model import BaseModel
-import enum
+from app.models.bee_model import BeeModel
  
 class BeeHiveType(enum.Enum):
     INPA   = 1
