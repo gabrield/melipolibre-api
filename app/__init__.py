@@ -16,8 +16,6 @@ def create_app():
     from app.database import db
     db.init_app(app)
     
-
-
     @app.before_first_request
     def create_database():
         db.drop_all()

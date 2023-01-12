@@ -18,17 +18,14 @@ class BeeKeeperRegister(Resource):
         def post(self):
             params = BeeKeeperRegister.params.parse_args()
             valid_params = filters.valid_req_params(params)
-            print(valid_params['email'])
             beekeeper = BeeKeeperModel.query.filter(BeeKeeperModel.email == valid_params['email']).first()
-            
 
             if beekeeper:
                 return {'message': 'user already registered'}, 409
-
             try:
                 beekeeper = BeeKeeperModel(**valid_params)
                 db.session.add(beekeeper)
                 db.session.commit()
-                return {'message' : f'{beekeeper.email} created.... Check your email for activaction'}, 201
+                return {'message' : f'{beekeeper.email} created.... Check your email for activation'}, 201
             except Exception as ex:
                 return {'message' : ex}, 500

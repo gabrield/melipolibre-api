@@ -1,6 +1,9 @@
 # APP_SETTINGS=development flask shell < test.py
-
+from app import create_app
+from flask import Blueprint
+from flask_restx import Api
 from app.database import db
+
 from app.models.beekeeper_model import BeeKeeperModel
 from app.models.meliponary_model import MeliponaryModel
 from app.models.beehive_model import BeeHiveModel, BeeHiveType
@@ -8,6 +11,8 @@ from app.models.bee_model import BeeModel
 import json
 import os
 
+app = create_app()
+api = Api(app)
 db.drop_all()
 db.create_all()
 
@@ -43,6 +48,7 @@ print(hive1.meliponary == mlp2)
 print(hive1.beekeeper)
 print(hive2.beekeeper)
 print(hive3.beekeeper)
+
 
 
 print()

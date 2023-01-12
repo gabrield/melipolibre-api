@@ -15,7 +15,8 @@ class Config(object):
 class DevelopmentConfig(Config):
     """Configurations for Development."""
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///dev_db.sqlite3?charset=utf8'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///devdata.db?charset=utf8'
+    SERVER_NAME = 'localhost:5000'
 
 
 class TestingConfig(Config):

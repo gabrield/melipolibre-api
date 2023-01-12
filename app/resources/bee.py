@@ -34,13 +34,16 @@ class Bees(Resource):
  
             return {"bees": [bee.json() for bee in query]}
 
-
 class Bee(Resource):
     def get(self, bee_id):
         try:
-            return BeeModel.query.get(bee_id).json()
-        except:
-            return {'message' : 'bee not found'}, 404
+            bee = BeeModel.query.get(bee_id)
+            if bee: 
+                return bee.json()
+
+            return {'message' : 'Bee not found'}, 404
+        except Exception as ex:
+            return {'message' : f'{ex}'}, 500
 
 
         
