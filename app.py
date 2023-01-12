@@ -14,7 +14,7 @@ api = Api(api_bp)
 api.add_resource(Bees, '/bees')
 api.add_resource(Bee,  '/bees/<int:bee_id>')
 
-api.add_resource(BeeKeeperRegister, '/register/')
+api.add_resource(BeeKeeperRegister, '/register')
 #api.add_resource(Bee,  '/beekeepers/meliponaries')
 
 app.register_blueprint(api_bp, url_prefix="/v1") 
