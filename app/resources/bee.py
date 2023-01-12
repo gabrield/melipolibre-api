@@ -1,5 +1,6 @@
 import json
 from flask_restx import Resource, reqparse
+from flask_jwt_extended import jwt_required
 from app.models.bee_model import BeeModel
 from app import filters
 
@@ -11,6 +12,7 @@ class Bees(Resource):
         params.add_argument('specie', type=str)
         params.add_argument('common_name', type=str)
 
+        @jwt_required()
         def get(self):
             params = Bees.params.parse_args()
             
@@ -35,6 +37,7 @@ class Bees(Resource):
             return {"bees": [bee.json() for bee in query]}
 
 class Bee(Resource):
+    @jwt_required()
     def get(self, bee_id):
         try:
             bee = BeeModel.query.get(bee_id)

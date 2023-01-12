@@ -1,10 +1,11 @@
 import json
 from flask_restx import Resource, reqparse, inputs
-from flask_jwt_extended import create_access_token
+from flask_jwt_extended import create_access_token, jwt_required, get_jwt
 import hmac
 from app.database import db
 from app.models.beekeeper_model import BeeKeeperModel
 from app import filters
+from app.blocklist import BLOCKLIST
 
 params = reqparse.RequestParser()
 params.add_argument('name', type=str)
@@ -13,7 +14,7 @@ params.add_argument('email', type=inputs.email(), required=True, \
 params.add_argument('password', type=str, required=True, help="Password required!", \
             trim=True)
 
-class BeeKeeperRegister(Resource):
+class BeeKeeper(Resource):
         def post(self):
             _params = params.parse_args()
             valid_params = filters.valid_req_params(_params)
@@ -21,14 +22,13 @@ class BeeKeeperRegister(Resource):
 
             if beekeeper:
                 return {'message': 'user already registered'}, 409
-            try:
-                beekeeper = BeeKeeperModel(**valid_params)
-                db.session.add(beekeeper)
-                db.session.commit()
-                return {'message' : f'{beekeeper.email} created.... Check your email for activation'}, 201
-            except Exception as ex:
-                return {'message' : ex}, 500
-
+            
+            beekeeper = BeeKeeperModel(**valid_params)
+            db.session.add(beekeeper)
+            db.session.commit()
+            
+            return {'message' : f'{beekeeper.email} created.... Check your email for activation'}, 201
+            
 
 
 class BeeKeeperLogin(Resource):
@@ -42,3 +42,11 @@ class BeeKeeperLogin(Resource):
                 return {'access_token' : access_token}
             
             return {'message': 'Wrong user or password'}, 401
+
+
+class BeeKeeperLogout(Resource):
+        @jwt_required()
+        def post(self):
+            jwt = get_jwt()['jti'] #JWT Token Identifier
+            BLOCKLIST.add(jwt)
+            return {'message' : 'Logged out successfully!'}, 200

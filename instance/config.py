@@ -7,7 +7,8 @@ class Config(object):
     """Parent configuration class."""
     DEBUG = False
     CSRF_ENABLED = True
-    SECRET = os.getenv('SECRET')
+    JWT_SECRET_KEY = os.getenv('SECRET')
+    JWT_BLOCKLIST_ENABLED = True
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
@@ -16,7 +17,6 @@ class DevelopmentConfig(Config):
     """Configurations for Development."""
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'sqlite:///devdata.db?charset=utf8'
-    SECRET_KEY = 'uiodsyfiusydfoisur98747593wydscvjbsdouwyu5498ye987reqw'
     SERVER_NAME = 'localhost:5000'
 
 
