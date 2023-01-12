@@ -1,12 +1,12 @@
 # melipolibre-api/__init__.py
-import os
+import os, json
 from flask import Flask, Blueprint
+from flask_jwt_extended import JWTManager
 # local import
 from instance.config import app_config
 from app.models.bee_model import BeeModel
 from app.resources.bee import Bees
-import json
-
+from app.blocklist import BLOCKLIST
 
 
 def create_app():
@@ -15,6 +15,16 @@ def create_app():
     app.config.from_object(app_config[config_name] or app_config['development'])
     from app.database import db
     db.init_app(app)
+    jwt = JWTManager(app)
+
+
+    @jwt.token_in_blocklist_loader
+    def check_blocklist(jwt_header, jwt_payload: dict):
+        return jwt_payload['jti'] in BLOCKLIST
+
+    @jwt.revoked_token_loader
+    def invalidated_access_token(jwt_header, jwt_payload: dict):
+        return jsonify({'message' : 'invalid token / logged out'}), 401
     
     @app.before_first_request
     def create_database():

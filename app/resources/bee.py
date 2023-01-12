@@ -38,15 +38,12 @@ class Bees(Resource):
 
 class Bee(Resource):
     @jwt_required()
-    def get(self, bee_id):
-        try:
-            bee = BeeModel.query.get(bee_id)
-            if bee: 
-                return bee.json()
-
-            return {'message' : 'Bee not found'}, 404
-        except Exception as ex:
-            return {'message' : f'{ex}'}, 500
+    def get(self, bee_id): 
+        bee = BeeModel.query.get(bee_id)
+        if bee: 
+            return bee.json()
+        return {'message' : 'Bee not found'}, 404
+      
 
 
         
