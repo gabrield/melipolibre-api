@@ -7,7 +7,7 @@ from app.resources.beekeeper import BeeKeeperRegister, \
 from app import create_app
 
 app = create_app()
-manager = JWTManager(app)
+jwt = JWTManager(app)
 api_bp = Blueprint('api', __name__)
 api = Api(api_bp, version='0.1', title='Melipolibre API',
     description='A simple API for beekeeping apps')
