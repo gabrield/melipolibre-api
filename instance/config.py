@@ -16,6 +16,7 @@ class DevelopmentConfig(Config):
     """Configurations for Development."""
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'sqlite:///devdata.db?charset=utf8'
+    SECRET_KEY = 'uiodsyfiusydfoisur98747593wydscvjbsdouwyu5498ye987reqw'
     SERVER_NAME = 'localhost:5000'
 
 
