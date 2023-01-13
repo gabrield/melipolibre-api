@@ -1,4 +1,3 @@
-from email.policy import default
 from app.database import db
 from app.models.base_model import BaseModel
 from app.models.meliponary_model import MeliponaryModel
