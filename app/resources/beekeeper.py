@@ -1,11 +1,13 @@
-import json
+import json, hmac
 from flask_restx import Resource, reqparse, inputs
-from flask_jwt_extended import create_access_token, jwt_required, get_jwt
-import hmac
-from app.database import db
-from app.models.beekeeper_model import BeeKeeperModel
+from flask_jwt_extended import create_access_token, jwt_required, \
+                               get_jwt, get_jwt_identity
 from app import filters
 from app.blocklist import BLOCKLIST
+from app.database import db
+from app.models.beekeeper_model import BeeKeeperModel
+
+
 
 params = reqparse.RequestParser()
 params.add_argument('name', type=str)
@@ -28,6 +30,22 @@ class BeeKeeper(Resource):
             db.session.commit()
             
             return {'message' : f'{beekeeper.email} created.... Check your email for activation'}, 201
+        
+        @jwt_required()
+        def delete(self):
+            beekeeper_id = get_jwt_identity()
+            BeeKeeperModel.query.filter_by(id=beekeeper_id).delete()
+            db.session.commit()
+
+            jwt = get_jwt()['jti'] #JWT Token Identifier
+            BLOCKLIST.add(jwt)
+
+            return {'message':'User deleted sucessfully!'}, 200
+
+        @jwt_required()
+        def put(self): #TO BE IMPLEMENTED
+            pass
+
             
 
 

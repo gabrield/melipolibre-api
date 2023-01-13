@@ -18,11 +18,11 @@ api.add_resource(Bees, '/bees')
 api.add_resource(Bee,  '/bees/<int:bee_id>')
 
 #BeeKeeper Resources
-api.add_resource(BeeKeeper, '/register')
-api.add_resource(BeeKeeper, '/update')
-api.add_resource(BeeKeeper, '/delete')
+api.add_resource(BeeKeeper, '/beekeepers/')
+
+
 api.add_resource(BeeKeeperLogin, '/login')
-api.add_resource(BeeKeeperLogout, '/logout')\
+api.add_resource(BeeKeeperLogout, '/logout')
     
 app.register_blueprint(api_bp, url_prefix="/v1")
 
