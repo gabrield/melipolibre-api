@@ -43,8 +43,15 @@ class BeeKeeper(Resource):
             return {'message':'User deleted sucessfully!'}, 200
 
         @jwt_required()
-        def put(self): #TO BE IMPLEMENTED
-            pass
+        def put(self):
+            _params = params.parse_args()
+            valid_params = filters.valid_req_params(_params)
+            beekeeper_id = get_jwt_identity()
+            print(valid_params)
+            BeeKeeperModel.query.filter_by(id=beekeeper_id).update(valid_params)
+            db.session.commit()
+            
+            return {'message' : 'user updated'}, 200
 
             
 

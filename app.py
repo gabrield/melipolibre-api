@@ -10,21 +10,18 @@ from app import create_app
 app = create_app()
 jwt = JWTManager(app)
 api_bp = Blueprint('api', __name__)
-api = Api(api_bp, version='0.1', title='Melipolibre API',
-    description='A simple API for beekeeping apps')
+api = Api(api_bp)
+
+
 
 #Bee Resources
 api.add_resource(Bees, '/bees')
 api.add_resource(Bee,  '/bees/<int:bee_id>')
 
 #BeeKeeper Resources
-api.add_resource(BeeKeeper, '/beekeepers/')
-
-
+api.add_resource(BeeKeeper, '/beekeepers/') # POST / PUT / DELETE methods  
 api.add_resource(BeeKeeperLogin, '/login')
 api.add_resource(BeeKeeperLogout, '/logout')
-    
-app.register_blueprint(api_bp, url_prefix="/v1")
 
 @jwt.token_in_blocklist_loader
 def check_blocklist(jwt_header, jwt_payload: dict):
@@ -35,4 +32,5 @@ def invalidated_access_token(jwt_header, jwt_payload: dict):
     return jsonify({'message' : 'invalid token / logged out'}), 401
 
 if __name__ == '__main__':
+    app.register_blueprint(api_bp, url_prefix="/v1")
     app.run()
