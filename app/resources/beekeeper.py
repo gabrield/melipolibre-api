@@ -47,10 +47,9 @@ class BeeKeeper(Resource):
             _params = params.parse_args()
             valid_params = filters.valid_req_params(_params)
             beekeeper_id = get_jwt_identity()
-            print(valid_params)
             BeeKeeperModel.query.filter_by(id=beekeeper_id).update(valid_params)
             db.session.commit()
-            
+
             return {'message' : 'user updated'}, 200
 
             
