@@ -9,7 +9,11 @@ class MeliponaryModel(db.Model, BaseModel):
     beekeeper_id    = db.Column(db.Integer, db.ForeignKey("beekeepers.id"), nullable=False)
     name            = db.Column(db.String(128), nullable=False)
     address         = db.Column(db.String(64), nullable=False)
-    hives           = db.relationship("BeeHiveModel", backref='meliponary')
+    hives           = db.relationship("BeeHiveModel", backref='meliponary',
+                                                      cascade="all, delete-orphan",
+                                                      lazy='dynamic',
+                                                      passive_deletes=True)
+                                                      
     created_at      = db.Column(db.String,  default=db.func.current_timestamp())
     updated_at      = db.Column(db.String,  default=db.func.current_timestamp(),
                                        onupdate=db.func.current_timestamp())
