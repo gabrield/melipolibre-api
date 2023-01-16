@@ -67,12 +67,12 @@ class BeeKeeperLogin(Resource):
 
 
 class BeeKeeperLogout(Resource):
-        @jwt_required()
-        
+
         @classmethod
         def logout(cls, jwt):
             BLOCKLIST.add(jwt['jti'])
 
+        @jwt_required()
         def post(self):
             jwt = get_jwt()
             BeeKeeperLogout.logout(jwt)
