@@ -16,7 +16,7 @@ params.add_argument('address', type=str, required=True, trim=True)
 
 class Meliponaries(Resource):
         @jwt_required()
-        def get(self):
+        def get(self): #TODO: filter by name and/or address
             return {'meliponaries': [meliponary.json() \
                 for meliponary in current_user.meliponaries]
             }
@@ -35,4 +35,36 @@ class Meliponaries(Resource):
 class Meliponary(Resource):
         @jwt_required()
         def get(self, meliponary_id):
-            return MeliponaryModel.query.get(meliponary_id)
+            meliponary = MeliponaryModel.query.get(meliponary_id)
+
+            if meliponary:
+                if meliponary.beekeeper_id != current_user.id:
+                    return {'message' : f'Meliponary {meliponary_id} doesn\'t belong to user'}, 401
+                return meliponary.json(), 200
+            
+            return {'message' : f'Meliponary {meliponary_id} doesn\'t exist'}, 400
+
+
+            
+
+
+
+            
+            return {'message' : 'Meliponary {meliponary_id} doesn\'t exist or belong to user'}, 
+
+        @jwt_required()
+        def put(self, meliponary_id):
+            meliponary = MeliponaryModel.query.filter_by(meliponary_id=meliponary_id, \
+                                                   beekeeper_id=current_user.id)
+            if meliponary:
+                valid_params = params.parse_args()
+                meliponary.update(**valid_params)
+                db.session.commit()
+                return {'message' : 'Meliponary {meliponary.name} updated'}
+            
+            return {'message' : 'Meliponary {meliponary_id} doesn\'t exist or belong to user'}
+
+    
+        @jwt_required()
+        def delete(self, meliponary_id):
+            ...
