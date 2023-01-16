@@ -12,8 +12,9 @@ params.add_argument('address', type=str, required=True, trim=True)
 class Meliponaries(Resource):
         @jwt_required()
         def get(self): #TODO: filter by name and/or address
-            return {'meliponaries': [meliponary.json() \
-                for meliponary in current_user.meliponaries]
+            return {
+                    'meliponaries':
+                    [meliponary.json() for meliponary in current_user.meliponaries]
             }, 200
 
     
