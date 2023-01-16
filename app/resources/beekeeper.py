@@ -33,7 +33,7 @@ class BeeKeeper(Resource):
         def delete(self):
             BeeKeeperModel.query.filter_by(id=current_user.id).delete()
             db.session.commit()
-            jwt = get_jwt()['jti'] #JWT Token Identifier
+            jwt = get_jwt() #JWT Token Identifier
             BeeKeeperLogout.logout(jwt)
 
             return {'message':'User deleted sucessfully!'}, 200
@@ -45,7 +45,7 @@ class BeeKeeper(Resource):
             BeeKeeperModel.query.filter_by(id=current_user.id).update(valid_params)
             db.session.commit()
             #logout after update
-            jwt = get_jwt()['jti'] #JWT Token Identifier
+            jwt = get_jwt()
             BeeKeeperLogout.logout(jwt)
             return {'message' : 'user updated'}, 200
 
