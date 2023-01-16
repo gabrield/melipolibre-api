@@ -1,13 +1,11 @@
 import json, hmac
 from flask_restx import Resource, reqparse, inputs
 from flask_jwt_extended import create_access_token, jwt_required, \
-                               get_jwt, get_jwt_identity
+                               get_jwt, get_jwt_identity, current_user
 from app import filters
 from app.blocklist import BLOCKLIST
 from app.database import db
 from app.models.beekeeper_model import BeeKeeperModel
-
-
 
 params = reqparse.RequestParser()
 params.add_argument('name', type=str)
@@ -33,8 +31,7 @@ class BeeKeeper(Resource):
         
         @jwt_required()
         def delete(self):
-            beekeeper_id = get_jwt_identity()
-            BeeKeeperModel.query.filter_by(id=beekeeper_id).delete()
+            BeeKeeperModel.query.filter_by(id=current_user.id).delete()
             db.session.commit()
 
             jwt = get_jwt()['jti'] #JWT Token Identifier
@@ -46,10 +43,11 @@ class BeeKeeper(Resource):
         def put(self):
             _params = params.parse_args()
             valid_params = filters.valid_req_params(_params)
-            beekeeper_id = get_jwt_identity()
-            BeeKeeperModel.query.filter_by(id=beekeeper_id).update(valid_params)
+            BeeKeeperModel.query.filter_by(id=current_user.id).update(valid_params)
             db.session.commit()
-
+            #logout after update
+            jwt = get_jwt()['jti'] #JWT Token Identifier
+            BeeKeeperLogout.logout(jwt)
             return {'message' : 'user updated'}, 200
 
             
@@ -70,7 +68,14 @@ class BeeKeeperLogin(Resource):
 
 class BeeKeeperLogout(Resource):
         @jwt_required()
+        
+        @classmethod
+        def logout(cls, jwt):
+            BLOCKLIST.add(jwt['jti'])
+
         def post(self):
-            jwt = get_jwt()['jti'] #JWT Token Identifier
-            BLOCKLIST.add(jwt)
+            jwt = get_jwt()
+            BeeKeeperLogout.logout(jwt)
             return {'message' : 'Logged out successfully!'}, 200
+
+       

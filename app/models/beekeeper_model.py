@@ -10,7 +10,6 @@ class BeeKeeperModel(db.Model, BaseModel):
     name            = db.Column(db.String(128))
     email           = db.Column(db.String(64), nullable=False)
     password        = db.Column(db.String(30), nullable=False)
-    api_key         = db.Column(db.String(256))
     active          = db.Column(db.Boolean, default=False)
     meliponaries    = db.relationship('MeliponaryModel', backref='beekeeper')
     hives           = db.relationship('BeeHiveModel', backref='beekeeper')
