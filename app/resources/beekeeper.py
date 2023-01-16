@@ -33,9 +33,8 @@ class BeeKeeper(Resource):
         def delete(self):
             BeeKeeperModel.query.filter_by(id=current_user.id).delete()
             db.session.commit()
-
             jwt = get_jwt()['jti'] #JWT Token Identifier
-            BLOCKLIST.add(jwt)
+            BeeKeeperLogout.logout(jwt)
 
             return {'message':'User deleted sucessfully!'}, 200
 
