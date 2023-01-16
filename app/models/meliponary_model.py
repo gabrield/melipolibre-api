@@ -10,6 +10,10 @@ class MeliponaryModel(db.Model, BaseModel):
     name            = db.Column(db.String(128), nullable=False)
     address         = db.Column(db.String(64), nullable=False)
     hives           = db.relationship("BeeHiveModel", backref='meliponary')
+    created_at      = db.Column(db.String,  default=db.func.current_timestamp())
+    updated_at      = db.Column(db.String,  default=db.func.current_timestamp(),
+                                       onupdate=db.func.current_timestamp())
+
 
 
     def __repr__(self):

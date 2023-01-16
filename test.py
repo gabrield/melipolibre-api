@@ -21,8 +21,8 @@ with open('app/data/asf_list.json') as bee_file:
     db.session.bulk_save_objects([BeeModel(**bee) for bee in bees])
     db.session.commit()
 
-bk1 = BeeKeeperModel(name='Gabs', email='gabs@abelha.cc', password='123', api_key='342sdvsfds')
-bk2 = BeeKeeperModel(name='Carlo', email='carlo@abelha.cc', password='123', api_key='342sdvsfds')
+bk1 = BeeKeeperModel(name='Gabs', email='gabs@abelha.cc', password='123')
+bk2 = BeeKeeperModel(name='Carlo', email='carlo@abelha.cc', password='123')
 
 db.session.add(bk1, bk2)
 db.session.commit()

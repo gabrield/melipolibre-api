@@ -7,6 +7,7 @@ from app.resources.beekeeper import BeeKeeper, \
     BeeKeeperLogin, BeeKeeperLogout
 from app.blocklist import BLOCKLIST
 from app import create_app
+from app.resources.meliponary import Meliponaries
 
 app = create_app()
 
@@ -25,6 +26,10 @@ api.add_resource(Bee,  '/bees/<int:bee_id>')
 api.add_resource(BeeKeeper, '/beekeepers/') # POST / PUT / DELETE methods  
 api.add_resource(BeeKeeperLogin, '/login')
 api.add_resource(BeeKeeperLogout, '/logout')
+
+#Meliponary Resources
+api.add_resource(Meliponaries, '/meliponaries')
+api.add_resource(Meliponaries, '/meliponaries/<int:meliponary_id>')
 
 if __name__ == '__main__':
     app.run()
