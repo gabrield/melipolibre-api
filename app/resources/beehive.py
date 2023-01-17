@@ -36,3 +36,22 @@ class BeeHives(Resource):
             return {'message' : f'Hive id:{new_hive.id} for {new_hive.bee.specie} created!'}, 201
         
         return {'message' : f'Could not create Beehive. Bee or Meliponary ID wrong'}, 403
+
+
+class BeeHive(Resource):
+    @jwt_required()
+    def get(self, hive_id):
+        hive = current_user.hives.filter_by(id=hive_id).first()
+
+        if hive:
+            return hive.json(), 200
+        
+        return {'message' : 'Hive not found'}, 404
+    
+    @jwt_required()
+    def put(self, hive_id):
+        ...
+
+    @jwt_required()
+    def delete(self, hive_id):
+        ...

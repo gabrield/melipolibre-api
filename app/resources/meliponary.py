@@ -59,6 +59,7 @@ class Meliponary(Resource):
     
         @jwt_required()
         def delete(self, meliponary_id):
+            #fix: filter using current_user.meliponaries.filter_by ???
             meliponary = MeliponaryModel.query.filter_by(id=meliponary_id).one_or_none()
 
             if meliponary:
