@@ -1,17 +1,18 @@
-
-import enum
+from enum import Enum, unique
 from sqlalchemy import ForeignKey
 from app.database import db
 from app.models.base_model import BaseModel
 from app.models.bee_model import BeeModel
- 
-class BeeHiveType(enum.Enum):
-    INPA   = 1
-    BAU    = 2
-    AF     = 3
-    WF     = 4
-    LANGSTROTH = 5
-    UNKNOW = 6
+
+
+@unique
+class BeeHiveType(str, Enum):
+    INPA   = 'INPA'
+    BAU    = 'BAU'
+    AF     = 'AF'
+    WF     = 'WF'
+    LANGSTROTH = 'LANGSTROTH'
+    UNKNOW = 'UNKNOW'
 
 
 class BeeHiveModel(db.Model, BaseModel):
