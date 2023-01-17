@@ -50,8 +50,26 @@ class BeeHive(Resource):
     
     @jwt_required()
     def put(self, hive_id):
-        ...
+        valid_params = params.parse_args()
+        hive = current_user.hives.filter_by(id=hive_id).first()
+
+        if hive:
+            hive.bee_id = valid_params['bee_id']
+            hive.meliponary_id = valid_params['meliponary_id']
+            db.session.commit()
+
+            return {'message' : f'Hive {hive.id} updated'}, 200
+        
+        return {'message' : 'Hive not updated'}, 401
+
 
     @jwt_required()
     def delete(self, hive_id):
-        ...
+        hive = current_user.hives.filter_by(id=hive_id).first()
+
+        if hive:
+            db.session.delete(hive)
+            db.session.commit()
+            return {'message' : 'Hive {hive.id} deleted'}
+        
+        return {'message' : 'Hive not found'}, 404
