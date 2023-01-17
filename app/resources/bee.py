@@ -21,7 +21,7 @@ class Bees(Resource):
 
             #return all bees if no parameter is passed
             if len(valid_params) == 0:
-                return {'bees': [bee.json() for bee in BeeModel.query.all()]}
+                return {'bees': [bee.json() for bee in BeeModel.query.all()]}, 200
 
             query = BeeModel.query
  
@@ -34,7 +34,7 @@ class Bees(Resource):
             if valid_params.get('common_name'):
                 query = query.filter(BeeModel.common_name.contains(valid_params["common_name"]))
  
-            return {"bees": [bee.json() for bee in query]}
+            return {"bees": [bee.json() for bee in query]}, 200
 
 class Bee(Resource):
     @jwt_required()

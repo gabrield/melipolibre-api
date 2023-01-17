@@ -46,7 +46,7 @@ class Meliponary(Resource):
 
             if meliponary:
                 if meliponary.beekeeper_id != current_user.id:
-                    return {'message' : f'Meliponary {meliponary_id} doesn\'t belong to user'}, 401
+                    return {'message' : f'Meliponary {meliponary_id} doesn\'t belong to user'}, 403
 
                 _params = params.parse_args()
                 valid_params = filters.valid_req_params(_params)
@@ -63,7 +63,7 @@ class Meliponary(Resource):
 
             if meliponary:
                 if meliponary.beekeeper_id != current_user.id:
-                    return {'message' : f'Meliponary {meliponary_id} doesn\'t belong to user'}, 401
+                    return {'message' : f'Meliponary {meliponary_id} doesn\'t belong to user'}, 403
                 
                 MeliponaryModel.query.filter_by(id=meliponary_id).delete()
                 db.session.commit()

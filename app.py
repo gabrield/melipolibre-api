@@ -3,6 +3,7 @@ from flask_restx import Api
 
 from app.models.beekeeper_model import BeeKeeperModel
 from app.resources.bee import Bee, Bees
+from app.resources.beehive import BeeHives
 from app.resources.beekeeper import ( BeeKeeper,
                                       BeeKeeperLogin, 
                                       BeeKeeperLogout )
@@ -32,6 +33,11 @@ api.add_resource(BeeKeeperLogout, '/logout')
 #Meliponary Resources
 api.add_resource(Meliponaries, '/meliponaries')
 api.add_resource(Meliponary,   '/meliponaries/<int:meliponary_id>')
+
+api.add_resource(BeeHives, '/beehives')
+
+
+
 
 if __name__ == '__main__':
     app.run()

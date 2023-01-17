@@ -15,7 +15,8 @@ class BeeKeeperModel(db.Model, BaseModel):
                                                          cascade="all, delete-orphan",
                                                          lazy='dynamic',
                                                          passive_deletes=True)
-    hives           = db.relationship('BeeHiveModel', backref='beekeeper')
+    hives           = db.relationship('BeeHiveModel', backref='beekeeper', lazy='dynamic')
+    created_at      = db.Column(db.String, default=db.func.current_timestamp())
 
     def __repr__(self):
         return f'<BeeKeeper "{self.name}">'

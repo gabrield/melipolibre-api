@@ -60,7 +60,7 @@ class BeeKeeperLogin(Resource):
 
             if beekeeper and hmac.compare_digest(beekeeper.password, valid_params['password']):
                 access_token = create_access_token(identity=beekeeper.id)
-                return {'access_token' : access_token}
+                return {'access_token' : access_token}, 200
             
             return {'message': 'Wrong user or password'}, 401
 
