@@ -2,8 +2,6 @@ import json
 from flask_restx import Resource, reqparse
 from flask_jwt_extended import jwt_required
 from app.models.bee_model import BeeModel
-from app import filters
-
 
 class Bees(Resource):
         params = reqparse.RequestParser()
@@ -14,25 +12,21 @@ class Bees(Resource):
 
         @jwt_required()
         def get(self):
-            params = Bees.params.parse_args()
-            
-            #filter only valid params which are not None
-            valid_params = filters.valid_req_params(params)
-
+            _params = Bees.params.parse_args()
             #return all bees if no parameter is passed
-            if len(valid_params) == 0:
+            if len(_params) == 0:
                 return {'bees': [bee.json() for bee in BeeModel.query.all()]}, 200
 
             query = BeeModel.query
  
-            if valid_params.get('genus'):
-                query = query.filter(BeeModel.genus.contains(valid_params["genus"]))
-            if valid_params.get('subgenus'):
-                query = query.filter(BeeModel.subgenus.contains(valid_params["subgenus"]))
-            if valid_params.get('specie'):
-                query = query.filter(BeeModel.specie.contains(valid_params["specie"]))
-            if valid_params.get('common_name'):
-                query = query.filter(BeeModel.common_name.contains(valid_params["common_name"]))
+            if _params.get('genus'):
+                query = query.filter(BeeModel.genus.contains(_params["genus"]))
+            if _params.get('subgenus'):
+                query = query.filter(BeeModel.subgenus.contains(_params["subgenus"]))
+            if _params.get('specie'):
+                query = query.filter(BeeModel.specie.contains(_params["specie"]))
+            if _params.get('common_name'):
+                query = query.filter(BeeModel.common_name.contains(_params["common_name"]))
  
             return {"bees": [bee.json() for bee in query]}, 200
 

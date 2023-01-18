@@ -1,10 +1,11 @@
 import json, hmac
 from flask_restx import Resource, reqparse, inputs
-from flask_jwt_extended import create_access_token, jwt_required, \
-                               get_jwt, get_jwt_identity, current_user
-from app import filters
-from app.blocklist import BLOCKLIST
+from flask_jwt_extended import (create_access_token, jwt_required,
+                                        get_jwt, get_jwt_identity,
+                                                    current_user)
+
 from app.database import db
+from app.blocklist import BLOCKLIST
 from app.models.beekeeper_model import BeeKeeperModel
 
 params = reqparse.RequestParser()

@@ -1,6 +1,5 @@
 from flask_restx import Resource, reqparse
 from flask_jwt_extended import jwt_required, current_user
-from app import filters
 from app.blocklist import BLOCKLIST
 from app.database import db
 from app.models.meliponary_model import MeliponaryModel
@@ -21,8 +20,7 @@ class Meliponaries(Resource):
         @jwt_required()
         def post(self):
             _params = params.parse_args()
-            valid_params = filters.valid_req_params(_params)
-            meliponary = MeliponaryModel(**valid_params, beekeeper=current_user)
+            meliponary = MeliponaryModel(**_params, beekeeper=current_user)
             db.session.add(meliponary)
             db.session.commit()
             return {'message' : f'{meliponary.name} created!'}, 201
@@ -49,9 +47,9 @@ class Meliponary(Resource):
                     return {'message' : f'Meliponary {meliponary_id} doesn\'t belong to user'}, 403
 
                 _params = params.parse_args()
-                valid_params = filters.valid_req_params(_params)
-                meliponary.name = valid_params['name']
-                meliponary.address = valid_params['address']
+
+                meliponary.name = _params['name']
+                meliponary.address = _params['address']
                 db.session.commit()
                 return {'message' : f'Meliponary {meliponary.name} updated'}, 200
         
@@ -60,7 +58,7 @@ class Meliponary(Resource):
         @jwt_required()
         def delete(self, meliponary_id):
             #fix: filter using current_user.meliponaries.filter_by ???
-            meliponary = MeliponaryModel.query.filter_by(id=meliponary_id).one_or_none()
+            meliponary = current_user.meliponaries.filter_by(id=meliponary_id).one_or_none()
 
             if meliponary:
                 if meliponary.beekeeper_id != current_user.id:

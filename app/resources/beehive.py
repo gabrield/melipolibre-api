@@ -1,6 +1,5 @@
 from flask_restx import Resource, reqparse
 from flask_jwt_extended import jwt_required, current_user
-from app import filters
 from app.database import db
 from app.models.bee_model import BeeModel
 from app.models.beehive_model import BeeHiveModel, BeeHiveType
@@ -23,9 +22,8 @@ class BeeHives(Resource):
     @jwt_required()
     def post(self):
         _params = params.parse_args()
-        valid_params = filters.valid_req_params(_params)
-        _bee = BeeModel.query.filter_by(id=valid_params['bee_id']).first()
-        _meliponary = current_user.meliponaries.filter_by(id=valid_params['meliponary_id']).first()
+        _bee = BeeModel.query.filter_by(id=_params['bee_id']).first()
+        _meliponary = current_user.meliponaries.filter_by(id=_params['meliponary_id']).first()
 
         if _bee and _meliponary:
             new_hive = BeeHiveModel(bee=_bee, meliponary=_meliponary,
@@ -50,12 +48,12 @@ class BeeHive(Resource):
     
     @jwt_required()
     def put(self, hive_id):
-        valid_params = params.parse_args()
+        _params = params.parse_args()
         hive = current_user.hives.filter_by(id=hive_id).first()
 
         if hive:
-            hive.bee_id = valid_params['bee_id']
-            hive.meliponary_id = valid_params['meliponary_id']
+            hive.bee_id = _params['bee_id']
+            hive.meliponary_id = _params['meliponary_id']
             db.session.commit()
 
             return {'message' : f'Hive {hive.id} updated'}, 200
