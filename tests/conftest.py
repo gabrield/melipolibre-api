@@ -1,8 +1,8 @@
-import pytest
+import os, json, pytest
 from app import create_app
 from app.database import db as _db
 from app.models.bee_model import BeeModel
-import os, json
+
 
 @pytest.fixture
 def app():
