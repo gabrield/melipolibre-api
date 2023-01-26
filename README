@@ -5,6 +5,7 @@ melipolibre-api is an API designed to help developers build applications for mel
 
 Installation
 To install melipolibre-api, you'll need to first install all of its dependencies. This can be done by running the following command:
+pip install -r requirements.txt
 
 
 Contributing
