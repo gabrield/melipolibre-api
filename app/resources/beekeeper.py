@@ -11,10 +11,14 @@ from app.models.beekeeper_model import BeeKeeperModel
 
 params = reqparse.RequestParser()
 params.add_argument('name', type=str)
-params.add_argument('email', type=inputs.email(), required=True, \
-    help="An valid email address required!", trim=True)
-params.add_argument('password', type=str, required=True, help="Password required!", \
-            trim=True)
+params.add_argument('email', type=inputs.email(), 
+                             required=True,
+                             help="An valid email address required!",
+                            trim=True)
+params.add_argument('password', type=str, 
+                                required=True, 
+                                help="Password required!",
+                                trim=True)
 
 class BeeKeeper(Resource):
     def post(self):

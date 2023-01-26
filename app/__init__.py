@@ -38,7 +38,7 @@ def register_resources(api: Api):
     api.add_resource(Bee,  '/bees/<int:bee_id>')   
 
     #BeeKeeper Resources
-    api.add_resource(BeeKeeper, '/beekeepers/') # POST / PUT / DELETE methods  
+    api.add_resource(BeeKeeper, '/beekeepers') # POST / PUT / DELETE methods  
     api.add_resource(BeeKeeperLogin, '/login')
     api.add_resource(BeeKeeperLogout, '/logout')
 
