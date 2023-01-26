@@ -45,7 +45,6 @@ class BeeKeeper(Resource):
         _params = params.parse_args()
         _params['password'] =  BeeKeeper.create_password(key = current_user.email.encode(), 
                                                          msg = _params['password'].encode())
-
         BeeKeeperModel.query.filter_by(id=current_user.id).update(_params)
         db.session.commit()
         #logout after update
