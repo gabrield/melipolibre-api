@@ -1,4 +1,5 @@
 import json, hmac, bcrypt
+from instance.config import Config
 from flask_restx import Resource, reqparse, inputs
 from flask_jwt_extended import (create_access_token, jwt_required,
                                         get_jwt, get_jwt_identity,
@@ -78,10 +79,7 @@ class BeeKeeperLogin(Resource):
 class BeeKeeperLogout(Resource):
     @classmethod
     def logout(cls, jwt):
-        try:
-            jwt_redis_blocklist.set(jwt['jti'], "")
-        except:
-            return  {'message': 'Wrong user or password'}, 401
+        jwt_redis_blocklist.set(jwt['jti'], "", ex=Config.JWT_ACCESS_TOKEN_EXPIRES)
 
 
     @jwt_required()
