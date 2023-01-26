@@ -23,11 +23,12 @@ def db(app):
     app.app_context().push()
     _db.init_app(app)
     _db.create_all()
-    with open(os.path.dirname(os.path.abspath(__file__)) + \
-            '/data/asf_list.json', encoding='utf-8') as bee_file:
+    print(os.path.dirname(os.path.abspath(__file__)))
+    with open(os.path.abspath('.') + \
+            '/app/data/asf_list.json', encoding='utf-8') as bee_file:
             bees =  json.load(bee_file)
-            db.session.bulk_save_objects([BeeModel(**bee) for bee in bees])
-            db.session.commit()
+            _db.session.bulk_save_objects([BeeModel(**bee) for bee in bees])
+            _db.session.commit()
     yield _db
     _db.session.close()
     _db.drop_all()
