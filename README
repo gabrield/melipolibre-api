@@ -10,12 +10,12 @@ To install melipolibre-api, you'll need to first install all of its dependencies
 
 pip install -r requirements.txt
 
-
 Once all of the dependencies are installed, you'll be ready to use the API in your application.
 
-## Usage
 
-To use melipolibre-api in your application, you'll first need to import it and then initialize it with your Redis connection information. From there, you can use the various methods provided by the API to interact with your meliponine data.
+## Run
+flask run
+
 
 ## Contributing
 We welcome contributions to melipolibre-api. If you find a bug or have an idea for a new feature, please open an issue or a pull request.
