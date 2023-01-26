@@ -1,6 +1,5 @@
 from flask_restx import Resource, reqparse
 from flask_jwt_extended import jwt_required, current_user
-from app.blocklist import BLOCKLIST
 from app.database import db
 from app.models.meliponary_model import MeliponaryModel
 

@@ -1,7 +1,7 @@
 # /instance/config.py
 
 import os
-
+from datetime import timedelta
 
 class Config(object):
     """Parent configuration class."""
@@ -11,6 +11,10 @@ class Config(object):
     JWT_BLOCKLIST_ENABLED = True
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=1)   
+    PROPAGATE_EXCEPTIONS = True                                    
+
+
 
 
 class DevelopmentConfig(Config):
@@ -18,7 +22,6 @@ class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'sqlite:///devdata.db?charset=utf8'
     SERVER_NAME = 'localhost:5000'
-
 
 class TestingConfig(Config):
     """Configurations for Testing, with a separate test database."""
