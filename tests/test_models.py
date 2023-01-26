@@ -10,3 +10,6 @@ def test_create_one_beekeeper_model(db):
     db.session.commit()
     db.session.refresh(beekeeper)
     assert beekeeper.name == 'Gabs'
+    assert beekeeper.email == 'gabs@abelha.cc'
+    assert beekeeper.password == '123'
+    assert beekeeper.active == False
