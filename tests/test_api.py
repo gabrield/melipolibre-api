@@ -57,3 +57,33 @@ def test_create_user_with_missing_email(client):
                         },
                         "message": "Input payload validation failed"
                     }
+
+def test_create_user_with_missing_password(client):
+    response = client.post('/v1/login', json={
+        "name" : "gabs12",
+        "email": "email@email.com"
+    })
+
+    assert response.status_code == 400
+    assert response.json == {
+                        "errors": {
+                            "password": "Password required! Missing required parameter in the JSON body"
+                            " or the post body or the query string"
+                        },
+                        "message": "Input payload validation failed"
+                    }
+def test_create_user_with_invalid_email(client):
+    invalid_email =  'email.email.com'
+    response = client.post('/v1/login', json={
+        "name" : "gabs12",
+        "password" : "sasd3423",
+        "email": invalid_email
+    })
+
+    assert response.status_code == 400
+    assert response.json == {
+                        "errors": {
+                            "email": f'An valid email address required! {invalid_email} is not a valid email'
+                        },
+                        "message": "Input payload validation failed"
+                    }
