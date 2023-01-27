@@ -1,15 +1,11 @@
 import pytest
-from app.models.beekeeper_model import BeeKeeperModel
-from app.models.meliponary_model import MeliponaryModel
-from app.models.beehive_model import BeeHiveModel, BeeHiveType
-from app.models.bee_model import BeeModel
+import factory
+import json
+from tests.factories import BeeKeeperFactory
 
-def test_create_one_beekeeper(client):
-    response = client.post("/v1/beekeepers", json={
-        "name": "sdfsdfsd",
-        "email" : "gabs12@gmail.com",
-        "password": "23423421"
-    })
+def test_create_one_new_beekeeper(client):
+    beekeeper = factory.build(dict, FACTORY_CLASS=BeeKeeperFactory)
+    response = client.post("/v1/beekeepers", json=beekeeper)
     assert response.status_code == 201
 
 
@@ -87,3 +83,23 @@ def test_create_user_with_invalid_email(client):
                         },
                         "message": "Input payload validation failed"
                     }
+
+
+def test_update_user(client):
+    ...
+
+
+def test_update_user_name(client):
+    ...
+
+def test_update_user_email(client):
+    ...
+
+def test_update_user_password(client):
+    ...
+
+def test_update_user_with_invalid_credential(client):
+    ...
+
+
+
