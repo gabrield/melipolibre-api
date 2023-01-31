@@ -1,6 +1,5 @@
 import pytest
 import factory
-from faker import Faker
 from app.models.beekeeper_model import BeeKeeperModel
 from tests.factories import BeeKeeperFactory
 
@@ -51,10 +50,11 @@ def test_login_with_missing_password(client):
 
 def test_login_with_invalid_email(client):
     beekeeper = BeeKeeperFactory.build().json()
-    beekeeper['email'] =  Faker().email() +'@' +Faker().name()
+    beekeeper['email'] =  beekeeper['email'] +'@' + beekeeper['name']
+    print(beekeeper)
 
     response = client.post('/v1/login', data=beekeeper)
-    assert response.status_code == 400
+    assert response.status_code == 400, "Expected code 400"
     assert response.json == {
                     "errors": {
                         "email": "An valid email address required! {email} is not a"
