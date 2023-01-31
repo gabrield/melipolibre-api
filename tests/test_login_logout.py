@@ -1,14 +1,16 @@
 import pytest
 import factory
 from faker import Faker
+from app.models.beekeeper_model import BeeKeeperModel
 from tests.factories import BeeKeeperFactory
 
 def test_login_to_obtain_authorizarion_token(client):
-    beekeeper = factory.build(dict, FACTORY_CLASS=BeeKeeperFactory)
-    response = client.post("/v1/beekeepers", json=beekeeper)
-    assert response.status_code == 201 #DRY CREATE AN ALREADY EXISTING BEEKEEPER
+    beekeeper = BeeKeeperFactory.build().json()
+    response = client.post("/v1/beekeepers", data=beekeeper)
+    assert response.status_code == 201
 
-    response = client.post("/v1/login", json=beekeeper)
+
+    response = client.post("/v1/login", data=beekeeper)
 
     assert response.status_code == 200
     assert response.json.get('access_token')

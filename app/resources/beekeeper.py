@@ -1,4 +1,4 @@
-import json, hmac, bcrypt
+import json, bcrypt
 from instance.config import Config
 from flask_restx import Resource, reqparse, inputs
 from flask_jwt_extended import (create_access_token, jwt_required,
@@ -28,9 +28,6 @@ class BeeKeeper(Resource):
             return {'message': 'user already registered'}, 409
         
         beekeeper = BeeKeeperModel(**_params)
-        password_hash =  BeeKeeper.create_password(key = beekeeper.email.encode(), 
-                                   msg = _params['password'].encode())
-        beekeeper.password = password_hash
         db.session.add(beekeeper)
         db.session.commit()
         
@@ -42,13 +39,11 @@ class BeeKeeper(Resource):
         db.session.commit()
         jwt = get_jwt() #JWT Token Identifier
         BeeKeeperLogout.logout(jwt)
-        return {'message':'User deleted sucessfully!'}, 200\
+        return {'message':'User deleted sucessfully!'}, 200
 
     @jwt_required()
     def put(self):
         _params = params.parse_args()
-        _params['password'] =  BeeKeeper.create_password(key = current_user.email.encode(), 
-                                                         msg = _params['password'].encode())
         BeeKeeperModel.query.filter_by(id=current_user.id).update(_params)
         db.session.commit()
         #logout after update
@@ -56,23 +51,14 @@ class BeeKeeper(Resource):
         BeeKeeperLogout.logout(jwt)
         return {'message' : 'user updated'}, 200
 
-    @classmethod
-    def create_password(cls, key, msg):
-        return hmac.new(key=key, 
-                        msg=msg,
-                        digestmod='sha1').digest()
-            
-
 
 class BeeKeeperLogin(Resource):
     def post(self):
         _params = params.parse_args()
+
         beekeeper = BeeKeeperModel.query.filter(BeeKeeperModel.email == _params['email']).first()
         if beekeeper:
-            _password_hash = BeeKeeper.create_password(key=beekeeper.email.encode(),
-                                                       msg=_params['password'].encode())
-
-            if hmac.compare_digest(beekeeper.password, _password_hash):
+            if beekeeper.password == _params['password']:
                 access_token = create_access_token(identity=beekeeper.id)
                 return {'access_token' : access_token}, 200
             

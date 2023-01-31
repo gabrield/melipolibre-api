@@ -25,6 +25,7 @@ class BeeHiveModel(db.Model, BaseModel):
     hive_type       = db.Column(db.Enum(BeeHiveType), nullable=False)
     bee             = db.relationship('BeeModel', backref='bee')
 
+
     created_at      = db.Column(db.String,  default=db.func.current_timestamp())
     updated_at      = db.Column(db.String,  default=db.func.current_timestamp(),
                                        onupdate=db.func.current_timestamp())
