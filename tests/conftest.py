@@ -2,6 +2,7 @@ import os, json, pytest
 from app import create_app
 from app.database import db as _db
 from app.models.bee_model import BeeModel
+from factories import BeeKeeperFactory
 
 
 @pytest.fixture
@@ -32,3 +33,12 @@ def db(app):
     yield _db
     _db.session.close()
     _db.drop_all()
+
+
+
+@pytest.fixture
+def beekeeper():
+    '''Creates BeeKeeper on database and returns its plain __dict_ representation'''
+    beekeeper = BeeKeeperFactory.stub()
+    user = BeeKeeperFactory(**vars(beekeeper)) #create registered user
+    return beekeeper.__dict__

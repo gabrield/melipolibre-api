@@ -16,8 +16,6 @@ class BeeKeeperFactory(factory.alchemy.SQLAlchemyModelFactory):
     email = factory.Faker('email')
     password = factory.Faker('password')
 
-
-
 class MeliponaryFactory(factory.alchemy.SQLAlchemyModelFactory):
     class Meta:
         model = MeliponaryModel

@@ -7,7 +7,7 @@ def test_create_beekeeper(client):
     response = client.post("/v1/beekeepers", data=beekeeper)
     assert response.status_code == 201
 
-#TO BE IMPLEMENTED
+
 def test_create_beekeeper_without_email(client):
     beekeeper = BeeKeeperFactory.build().json()
     del beekeeper['email']
@@ -23,8 +23,11 @@ def test_create_beekeeper_without_email(client):
                         "message": "Input payload validation failed"
             }
 
-#def test_create_beekeeper_without_password(client):
-#    ...
+'''
+#TO BE IMPLEMENTED
+def test_create_beekeeper_without_password(client):
+
+     ...
 
 def test_update_beekeeper_name(client):
     ...
@@ -37,3 +40,4 @@ def test_update_beekeeper_password(client):
 
 def test_update_beekeeper_with_invalid_credential(client):
     ...
+'''
