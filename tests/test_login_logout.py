@@ -44,6 +44,8 @@ def test_login_with_missing_password(client, beekeeper_stub):
                         },
                         "message": "Input payload validation failed"
                     }
+
+
 def test_login_with_void_password(client, beekeeper):
     beekeeper['password'] = ''
     response = client.post('/v1/login', json=beekeeper)

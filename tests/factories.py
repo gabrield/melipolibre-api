@@ -12,6 +12,7 @@ class BeeKeeperFactory(factory.alchemy.SQLAlchemyModelFactory):
         model = BeeKeeperModel
         sqlalchemy_session = _db.session
         sqlalchemy_session_persistence = 'commit'
+        
     name = factory.Faker('name')
     email = factory.Faker('email')
     password = factory.Faker('password')
@@ -20,7 +21,8 @@ class MeliponaryFactory(factory.alchemy.SQLAlchemyModelFactory):
     class Meta:
         model = MeliponaryModel
         sqlalchemy_session = _db.session
-    sqlalchemy_session_persistence = 'commit'
+        sqlalchemy_session_persistence = 'commit'
+
     name = factory.Faker('name')
     address = factory.Faker('address')
     beekeeper = factory.SubFactory(BeeKeeperFactory)
