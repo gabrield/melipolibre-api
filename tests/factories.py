@@ -11,7 +11,7 @@ class BeeKeeperFactory(factory.alchemy.SQLAlchemyModelFactory):
     class Meta:
         model = BeeKeeperModel
         sqlalchemy_session = _db.session
-        sqlalchemy_session_persistence = 'flush'
+        sqlalchemy_session_persistence = 'commit'
     name = factory.Faker('name')
     email = factory.Faker('email')
     password = factory.Faker('password')
@@ -20,7 +20,7 @@ class MeliponaryFactory(factory.alchemy.SQLAlchemyModelFactory):
     class Meta:
         model = MeliponaryModel
         sqlalchemy_session = _db.session
-        sqlalchemy_session_persistence = 'flush'
+    sqlalchemy_session_persistence = 'commit'
     name = factory.Faker('name')
     address = factory.Faker('address')
     beekeeper = factory.SubFactory(BeeKeeperFactory)
@@ -30,14 +30,14 @@ class BeeHiveFactory(factory.alchemy.SQLAlchemyModelFactory):
     class Meta:
         model = BeeHiveModel
         sqlalchemy_session = _db.session
-        sqlalchemy_session_persistence = 'flush'
+        sqlalchemy_session_persistence = 'commit'
 
-    def __lazy_users(self):
+    def __bee_generator(self):
         """Turn `BeeModel.query.all()` into a lazily evaluated generator"""
         yield from BeeModel.query.all()
     
     beekeeper = factory.SubFactory(BeeKeeperFactory)
     meliponary = factory.SubFactory(MeliponaryFactory)
-    bee = factory.Iterator(__lazy_users)
+    bee = factory.Iterator(__bee_generator)
     hive_type = factory.Iterator(BeeHiveType)
 

@@ -37,8 +37,11 @@ def db(app):
 
 
 @pytest.fixture
-def beekeeper():
+def beekeeper(beekeeper_stub):
     '''Creates BeeKeeper on database and returns its plain __dict_ representation'''
-    beekeeper = BeeKeeperFactory.stub()
-    user = BeeKeeperFactory(**vars(beekeeper)) #create registered user
-    return beekeeper.__dict__
+    BeeKeeperFactory(**beekeeper_stub) #create registered user
+    return beekeeper_stub
+
+@pytest.fixture
+def beekeeper_stub():
+    return BeeKeeperFactory.stub().__dict__
