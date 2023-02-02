@@ -9,16 +9,26 @@ from app.database import db
 from app.blocklist import jwt_redis_blocklist
 from app.models.beekeeper_model import BeeKeeperModel
 
+def password_type(password):
+    if not isinstance(password, str):
+        raise ValueError('This is not password_type')
+    if len(password) < 8:
+        raise ValueError('Password must  contain at least 8 characters')
+    return password
+
+
 params = reqparse.RequestParser()
 params.add_argument('name', type=str)
 params.add_argument('email', type=inputs.email(), 
                              required=True,
                              help="An valid email address required!",
                             trim=True)
-params.add_argument('password', type=str, 
+params.add_argument('password', type=password_type,
                                 required=True, 
-                                help="Password required!",
+                                help="A valid password required!",
                                 trim=True)
+
+
 
 class BeeKeeper(Resource):
     def post(self):

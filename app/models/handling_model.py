@@ -18,7 +18,7 @@ class HandlingModel(db.Model):
         __tablename__ = 'handlings'
         id            = db.Column(db.Integer, primary_key=True, autoincrement=True)
         beehive_id    = db.Column(db.Integer, db.ForeignKey('beehives.id'), nullable=False)
-        handling      = db.Column(NestedMutableJson, nullable=False)
+        handling      = db.Column(NestedMutableJson, nullable=False) #CHANGE FOR CompositeType???
         handling_type = db.Column(db.Enum(HandlingType), nullable=False)
         beehive       = db.relationship("BeeHiveModel", backref='handlings', lazy='dynamic')
         created_at    = db.Column(db.String,  default=db.func.current_timestamp())

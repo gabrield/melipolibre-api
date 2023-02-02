@@ -31,7 +31,7 @@ class BeeHiveModel(db.Model, BaseModel):
                                        onupdate=db.func.current_timestamp())
 
     def __repr__(self):
-        return f'<BeeHive "{self.bee.specie}">'
+        return f'<BeeHive(specie="{self.bee.specie}", hive_type={self.hive_type}")>'
 
 
 
