@@ -4,6 +4,8 @@ from app.models.meliponary_model import MeliponaryModel
 from app.models.beehive_model import BeeHiveModel
 from sqlalchemy_utils import force_auto_coercion
 from sqlalchemy_utils.types.password import PasswordType
+from sqlalchemy_utils.types.email import EmailType
+
 
 force_auto_coercion()
 
@@ -11,7 +13,7 @@ class BeeKeeperModel(db.Model, BaseModel):
     __tablename__ = 'beekeepers'
     id              = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name            = db.Column(db.String(128))
-    email           = db.Column(db.String(64), nullable=False)
+    email           = db.Column(EmailType, nullable=False)
     password        = db.Column(PasswordType(schemes=['bcrypt']), nullable=False)
     active          = db.Column(db.Boolean, default=False)
     meliponaries    = db.relationship('MeliponaryModel', backref='beekeeper',
