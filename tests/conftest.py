@@ -5,12 +5,15 @@ from app.models.bee_model import BeeModel
 from factories import BeeKeeperFactory
 
 
-@pytest.fixture
+@pytest.fixture(scope='module')
 def app():
     app = create_app()
     yield app
 
-@pytest.fixture
+
+
+
+@pytest.fixture(scope='module')
 def client(app):
     with app.test_client() as client:
          with app.app_context():
@@ -19,7 +22,7 @@ def client(app):
             yield client
 
 
-@pytest.fixture
+@pytest.fixture(scope='function')
 def db(app):
     app.app_context().push()
     _db.init_app(app)
