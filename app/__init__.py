@@ -2,8 +2,10 @@
 import os, json
 from app.blocklist import jwt_redis_blocklist
 from app.database import db
+from app.blueprint_api import blueprint, api
+#from app.api import api
 from instance.config import app_config
-from flask import Flask, Blueprint, jsonify, url_for
+from flask import Flask, jsonify, url_for
 from flask_restx import Api
 #JWT
 from flask_jwt_extended import JWTManager
@@ -58,8 +60,8 @@ def create_app():
 
     db.init_app(app)
     jwt = JWTManager(app)
-    blueprint = Blueprint('api', __name__)
-    api = Api(blueprint)
+    #blueprint = Blueprint('melipolibre-api', __name__)
+    #api = Api(blueprint)
     app.register_blueprint(blueprint, url_prefix="/v1")
 
 

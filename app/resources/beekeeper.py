@@ -6,8 +6,10 @@ from flask_jwt_extended import (create_access_token, jwt_required,
                                                     current_user)
 
 from app.database import db
+from app.blueprint_api import blueprint, api
 from app.blocklist import jwt_redis_blocklist
 from app.models.beekeeper_model import BeeKeeperModel
+
 
 def password_type(password):
     if not isinstance(password, str):
@@ -28,8 +30,10 @@ params.add_argument('password', type=password_type,
                                 help="A valid password required!",
                                 trim=True)
 
-
-
+        
+@api.doc(params={'email': 'User\'s email'})
+@api.doc(params={'name' : 'User\'s name'})
+@api.doc(params={'password' : 'A password greater than 8 characters'})
 class BeeKeeper(Resource):
     def post(self):
         _params = params.parse_args()
