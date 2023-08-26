@@ -56,7 +56,7 @@ def register_resources(api: Api):
 
     # Handlings Resources
     api.add_resource(Handlings, '/handlings')
-    # api.add_resource(BeeHive, '/beehives/<int:hive_id>')
+    # api.add_resource(BeeHive, '/handlings/<int:handlinh_id>')
 
 
 def create_app():
