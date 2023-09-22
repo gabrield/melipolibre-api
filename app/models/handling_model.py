@@ -22,9 +22,7 @@ class HandlingModel(db.Model):
         'beehives.id'), nullable=False)
     # CHANGE FOR CompositeType???
     handling = db.Column(NestedMutableJson, nullable=False)
-    handling_type = db.Column(db.Enum(HandlingType), nullable=False)
-    beehive = db.relationship("BeeHiveModel", backref='handling')
-
+    type = db.Column(db.Enum(HandlingType), nullable=False)
     created_at = db.Column(db.String,  default=db.func.current_timestamp())
     updated_at = db.Column(db.String,  default=db.func.current_timestamp(),
                            onupdate=db.func.current_timestamp())

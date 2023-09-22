@@ -3,6 +3,7 @@ from sqlalchemy import ForeignKey
 from app.database import db
 from app.models.base_model import BaseModel
 from app.models.bee_model import BeeModel
+#from app.models.handling_model import HandlingModel
 
 
 @unique
@@ -26,10 +27,15 @@ class BeeHiveModel(db.Model, BaseModel):
         'meliponaries.id'), nullable=False)
     hive_type = db.Column(db.Enum(BeeHiveType), nullable=False)
     bee = db.relationship('BeeModel', backref='bee')
+    handlings = db.relationship('HandlingModel', backref='beehive',
+                                                         cascade="all, delete-orphan",
+                                                         lazy='dynamic',
+                                                         passive_deletes=True)
 
     created_at = db.Column(db.String,  default=db.func.current_timestamp())
     updated_at = db.Column(db.String,  default=db.func.current_timestamp(),
                            onupdate=db.func.current_timestamp())
 
     def __repr__(self):
-        return f'<BeeHive(specie="{self.bee.specie}", hive_type={self.hive_type}")>'
+        return f'<BeeHive(specie="{self.bee.specie}", \
+                 hive_type={self.hive_type}")>'
