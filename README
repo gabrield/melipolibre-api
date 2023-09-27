@@ -25,3 +25,12 @@ melipolibre-api is open-sourced software licensed under the [MIT license](https:
 
 
 
+
+## ROADMAP
+
+Implement migrations with Alembic
+Create a Docker runnable image
+Implement CI/CD (GHithub Actions + Heroku ???)
+
+
+
