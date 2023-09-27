@@ -25,3 +25,14 @@ def test_create_beekeeper_with_missing_parameters(db, name, email, password):
         beekeeper = BeeKeeperModel(name=name, email=email, password=password)
         db.session.add(beekeeper)
         db.session.commit()
+
+
+'''
+tests to be added on this file
+
+update_beekeeper properties
+update_beekeeper properties with invalid input (missing or out of format)
+delete beekeeper
+
+
+'''
