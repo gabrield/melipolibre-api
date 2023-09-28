@@ -1,5 +1,5 @@
 [tool.taskipy.tasks]
-run = "SECRET=$(openssl rand -base64 32) flask  run --debugger --host=0.0.0.0 -p 8000"
+run = "SECRET=$(openssl rand -base64 32) flask  run --debug --host=0.0.0.0 -p 8000"
 routes = "flask routes"
 lint = "pylint app/"
 test = "SECRET=$(openssl rand -base64 32) pytest -v"
