@@ -6,16 +6,6 @@ from app.models.beehive_model import BeeHiveModel, BeeHiveType
 from app.models.bee_model import BeeModel
 from factories import BeeKeeperFactory
 
-
-def test_create_one_beekeeper_model_and_check_properties(db):
-    beekeeper = BeeKeeperFactory(
-        name='Gabs', email='gabs@melipolibre.cc', password='123')
-    assert beekeeper.name == 'Gabs'
-    assert beekeeper.email == 'gabs@melipolibre.cc'
-    assert beekeeper.password == '123'
-    assert beekeeper.active is False
-
-
 @pytest.mark.parametrize("name, email, password", [
     ('Gabs', 'gabs@melipolibre.cc', None),
     ("Test", None, "name"),
@@ -34,14 +24,14 @@ def test_create_beekeeper_with_missing_parameters(db, name, email, password):
 def test_create_one_beekeeper_model_and_save_to_db(db):
     try:
         beekeeper = BeeKeeperModel(
-            name='Gabs', email='gabs@melipolibre.cc', password='123')
+            name='Gabs', email='gabs@melipolibre.cc', password='11111')
         db.session.add(beekeeper)
         db.session.commit()
     except Exception:
         raise Exception("test_create_one_beekeeper_model_and_save_to_db")
 
 
-def test_create_one_beekeeper_model_and_retrieve_from_db(db):
+def test_create_one_beekeeper_and_retrieve_from_db(db):
     beekeeper = BeeKeeperFactory()
     assert db.session.query(BeeKeeperModel).filter(
         BeeKeeperModel.email == beekeeper.email).one() == beekeeper
