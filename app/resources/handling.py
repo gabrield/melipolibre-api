@@ -69,32 +69,25 @@ handling = api.model('Handlings', {
 class Handlings(Resource):
     @jwt_required()
     def get(self):
-        # return [handling for hive in current_user.hives for handling in hive.handlings] ???
-        handlings = []
-
-        for hive in current_user.hives:
-            for handling in hive.handlings:
-                handlings.append(handling)
-
-        return {
-            'handlings': handlings
-        }, 200
+        return {'handlings': [handling.json() for hive in current_user.hives for handling in hive.handlings]}, 200
 
     @jwt_required()
     @api.doc(body=handling)
     def post(self):
         _params = params.parse_args()
         print(_params)
-        handling_validator = validators[_params['type']]
-        if handling_validator(_params['handling']):
-            handling = HandlingModel(**_params)
-            print(handling.type)
 
+        (handling_validator) = validators[_params['type']]
+
+        if handling_validator(_params['handling']):
+            print(handling_validator)
+            handling = HandlingModel(**_params)
+            print(handling)
             db.session.add(handling)
             db.session.commit()
             return {'message': f'{handling.type} created.... '}, 201
 
-        return {'message': f'{_params["type"]} created.... '}, 401
+        return {'message': f'{handling.type} not created.... '}, 401
 
 
 class Handling(Resource):

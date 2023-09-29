@@ -1,7 +1,7 @@
 from enum import Enum, unique
 from app.database import db
 from app.models.base_model import BaseModel
-from app.models.beehive_model import BeeHiveModel
+# from app.models.beehive_model import BeeHiveModel
 from sqlalchemy_json import NestedMutableJson
 
 
@@ -15,7 +15,7 @@ class HandlingType(str, Enum):
     # CHECKS IF STRING IS IN HandlingType print('FEEDING' in list(HandlingType))
 
 
-class HandlingModel(db.Model):
+class HandlingModel(db.Model, BaseModel):
     __tablename__ = 'handlings'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     beehive_id = db.Column(db.Integer, db.ForeignKey(
