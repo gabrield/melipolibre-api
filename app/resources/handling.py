@@ -1,5 +1,7 @@
 from flask_restx import Resource, reqparse, inputs, fields
 from flask_jwt_extended import jwt_required, current_user
+from jsonschema import validate
+from jsonschema.exceptions import ValidationError
 from app.database import db
 from app.blueprint_api import api
 from app.models.handling_model import HandlingModel, HandlingType
@@ -9,6 +11,22 @@ validators = {}
 
 
 def inspection(handling: dict):
+    inspection_scheme = {
+        "type": "object",
+        "properties": {
+            "queen_observed": {"type": "bool"},
+            "strength": {"type": "string", "enum":  ["VERY_WEAK","WEAK", "GOOD", "STRONG", "VERY_STRONG"]},
+            "brood" : {"type": "bool"},
+            "observations":  {"type": "string"},
+        },
+        "required": ["queen_observed"],
+        "additionalProperties": False
+    }
+
+    try:
+        validate(instance=handling, schema=inspection_scheme)
+    except ValidationError as error:
+        raise (error)
     return True
 
 
@@ -25,6 +43,7 @@ def transposition(handling: dict):
 
 
 def split(handling: dict):
+
     return True
 
 
@@ -74,20 +93,18 @@ class Handlings(Resource):
     @jwt_required()
     @api.doc(body=handling)
     def post(self):
-        _params = params.parse_args()
-        print(_params)
-
-        (handling_validator) = validators[_params['type']]
-
-        if handling_validator(_params['handling']):
+        try:
+            _params = params.parse_args()
+            print(_params)
+            handling_validator = validators[_params['type']]
+            handling_validator(_params['handling'])
             print(handling_validator)
             handling = HandlingModel(**_params)
-            print(handling)
             db.session.add(handling)
             db.session.commit()
             return {'message': f'{handling.type} created.... '}, 201
-
-        return {'message': f'{handling.type} not created.... '}, 401
+        except Exception as e:
+            return {'message': f'{handling.type} not created.... {e}'}, 401
 
 
 class Handling(Resource):
