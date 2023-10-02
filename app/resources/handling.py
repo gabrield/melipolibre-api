@@ -11,36 +11,34 @@ validators = {}
 
 
 def inspection(handling: dict):
-    inspection_scheme = {
+    inspection_schema = {
         "title": "INSPECTION",
         "type": "object",
         "properties": {
             "queen_observed": {"type": "bool"},
-            "strength": {"type": "string", "enum":  ["VERY_WEAK","WEAK", "GOOD", "STRONG", "VERY_STRONG"]},
-            "brood" : {"type": "bool"},
+            "strength": {"type": "string", "enum":  ["VERY_WEAK", "WEAK", "GOOD", "STRONG", "VERY_STRONG"]},
+            "brood": {"type": "bool"},
             "observations":  {"type": "string"},
         },
         "required": ["queen_observed"],
         "additionalProperties": False
     }
-    validate(instance=handling, schema=inspection_scheme)
+    validate(instance=handling, schema=inspection_schema)
 
 
 def feeding(handling: dict):
-    return True
-
+    pass
 
 def hive_change(handling: dict):
-    return True
+   pass
 
 
 def transposition(handling: dict):
-    return True
+    pass
 
 
 def split(handling: dict):
-
-    return True
+    pass
 
 
 def add_validator(validator_dict: dict, handling: str):
