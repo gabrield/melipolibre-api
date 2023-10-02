@@ -12,7 +12,7 @@ validators = {}
 
 def inspection(handling: dict):
     inspection_scheme = {
-        "title": "INSPECTION"
+        "title": "INSPECTION",
         "type": "object",
         "properties": {
             "queen_observed": {"type": "bool"},
