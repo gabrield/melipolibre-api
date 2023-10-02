@@ -12,6 +12,7 @@ validators = {}
 
 def inspection(handling: dict):
     inspection_scheme = {
+        "title": "INSPECTION"
         "type": "object",
         "properties": {
             "queen_observed": {"type": "bool"},
@@ -22,12 +23,7 @@ def inspection(handling: dict):
         "required": ["queen_observed"],
         "additionalProperties": False
     }
-
-    try:
-        validate(instance=handling, schema=inspection_scheme)
-    except ValidationError as error:
-        raise (error)
-    return True
+    validate(instance=handling, schema=inspection_scheme)
 
 
 def feeding(handling: dict):
@@ -103,7 +99,7 @@ class Handlings(Resource):
             db.session.add(handling)
             db.session.commit()
             return {'message': f'{handling.type} created.... '}, 201
-        except Exception as e:
+        except ValidationError as e:
             return {'message': f'{handling.type} not created.... {e}'}, 401
 
 
