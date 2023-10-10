@@ -11,6 +11,7 @@ validators = {}
 
 
 def inspection(handling: dict):
+    url_pattern = "^(https?|ftp)://[^\s/$.?#].[^\s]*$"
     inspection_schema = {
         "title": "INSPECTION",
         "type": "object",
@@ -22,13 +23,13 @@ def inspection(handling: dict):
             "pests_or_diseases": {"type": "bool"},
             "queen_cell": {"type": "bool"},
             "honeypot_modules": {"type": "integer", "minimum": 0},
-            "audio": {"type": "string", "format": "http-https-url"},
+            "audio": {"type": "string", "pattern": url_pattern},
             "observations":  {"type": "string"},
             "images": {
                 "type": "array",
                         "items": {
                             "type": "string",
-                            "format": "http-https-url"
+                            "pattern": url_pattern
                         }
             }
         },
