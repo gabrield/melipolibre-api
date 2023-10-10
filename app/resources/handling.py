@@ -27,7 +27,7 @@ def inspection(handling: dict):
             "images": {
                 "type": "array",
                         "items": {
-                            "type": "string"
+                            "type": "string",
                             "format": "http-https-url"
                         }
             }
