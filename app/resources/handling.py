@@ -1,4 +1,4 @@
-from flask_restx import Resource, reqparse, inputs, fields
+from flask_restx import Resource, reqparse, fields
 from flask_jwt_extended import jwt_required, current_user
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
@@ -17,10 +17,22 @@ def inspection(handling: dict):
         "properties": {
             "queen_observed": {"type": "bool"},
             "strength": {"type": "string", "enum":  ["VERY_WEAK", "WEAK", "GOOD", "STRONG", "VERY_STRONG"]},
+            "food_rate": {"type": "integer", "minimum": 0, "maximum": 5},
             "brood": {"type": "bool"},
+            "pests_or_diseases": {"type": "bool"},
+            "queen_cell": {"type": "bool"},
+            "honeycomb_modules": {"type": "integer", "minimum": 0},
+            "audio": {"type": "string", "format": "http-https-url"},
             "observations":  {"type": "string"},
+            "images": {
+                "type": "array",
+                        "items": {
+                            "type": "string"
+                            "format": "http-https-url"
+                        }
+            }
         },
-        "required": ["queen_observed"],
+        "required": ["observations"],
         "additionalProperties": False
     }
     validate(instance=handling, schema=inspection_schema)
@@ -29,8 +41,9 @@ def inspection(handling: dict):
 def feeding(handling: dict):
     pass
 
+
 def hive_change(handling: dict):
-   pass
+    pass
 
 
 def transposition(handling: dict):
