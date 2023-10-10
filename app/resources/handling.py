@@ -21,7 +21,7 @@ def inspection(handling: dict):
             "brood": {"type": "bool"},
             "pests_or_diseases": {"type": "bool"},
             "queen_cell": {"type": "bool"},
-            "honeycomb_modules": {"type": "integer", "minimum": 0},
+            "honeypot_modules": {"type": "integer", "minimum": 0},
             "audio": {"type": "string", "format": "http-https-url"},
             "observations":  {"type": "string"},
             "images": {
