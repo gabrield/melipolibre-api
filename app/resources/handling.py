@@ -17,7 +17,11 @@ def inspection(handling: dict):
         "type": "object",
         "properties": {
             "queen_observed": {"type": "bool"},
-            "strength": {"type": "string", "enum":  ["VERY_WEAK", "WEAK", "GOOD", "STRONG", "VERY_STRONG"]},
+            "strength": {
+                "type": "string", "enum":  [
+                        "VERY_WEAK", "WEAK", "GOOD", "STRONG", "VERY_STRONG"
+                ]
+            },
             "food_rate": {"type": "integer", "minimum": 0, "maximum": 5},
             "brood": {"type": "bool"},
             "pests_or_diseases": {"type": "bool"},
@@ -38,21 +42,70 @@ def inspection(handling: dict):
     }
     validate(instance=handling, schema=inspection_schema)
 
+# testar ainda!!!
+
 
 def feeding(handling: dict):
-    pass
+    feeding_schema = {
+        "title": "FEEDING",
+        "type": "object",
+        "properties": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "array",
+                        "prefixItems": [
+                            {"type": "string", "enum": [
+                                "POLEN", "SURGAR_SYRUP", "OTHER"]},
+                            {"type": "number", "minimum": 0},
+                        ],
+                        "minItems": 2,
+                    }
+                ]
+        },
+        "additionalProperties": False
+    }
+
+    validate(instance=handling, schema=feeding_schema)
 
 
 def hive_change(handling: dict):
-    pass
+    hive_change_schema = {
+        "title": "HIVE_CHANGE",
+        "type": "object",
+        "properties": {
+            "from_hive": {"type": "string", "enum": list(HandlingType)},
+            "to_hive": {"type": "string", "enum": list(HandlingType)},
+        },
+        "required": ["from_hive", "to_hive"],
+        "additionalProperties": False
+    }
+    validate(instance=handling, schema=hive_change_schema)
 
 
 def transposition(handling: dict):
-    pass
+    transposition_schema = {
+        "title": "TRANSPOSITION",
+        "type": "object",
+        "properties": {
+            "from_meliponary": {"type": "integer", "minimum": 0},
+            "to_meliponary": {"type": "integer", "minimum": 0},
+        },
+        "required": ["from_meliponary", "to_meliponary"],
+        "additionalProperties": False
+    }
+    validate(instance=handling, schema=transposition_schema)
 
 
 def split(handling: dict):
-    pass
+    transposition_schema = {
+        "title": "SPLIT",
+        "type": "object",
+        "observations":  {"type": "string"},
+        "required": ["from_hive", "to_hive"],
+        "additionalProperties": False
+    }
+    validate(instance=handling, schema=transposition_schema)
 
 
 def add_validator(validator_dict: dict, handling: str):
@@ -60,10 +113,12 @@ def add_validator(validator_dict: dict, handling: str):
         handling_validator = eval(handling.lower())
     except NameError:
         raise NameError(
-            f'You must provide a function called {handling.lower()} before trying to add a validator')
+            f'You must provide a function called {handling.lower()}\
+                before trying to add a validator')
     if not callable(handling_validator):
         raise NameError(
-            f'You must provide a callable function called {handling.lower()} before trying to add a validator')
+            f'You must provide a callable function called {handling.lower()}\
+                before trying to add a validator')
 
     validator_dict[handling] = handling_validator
 
@@ -96,7 +151,12 @@ handling = api.model('Handlings', {
 class Handlings(Resource):
     @jwt_required()
     def get(self):
-        return {'handlings': [handling.json() for hive in current_user.hives for handling in hive.handlings]}, 200
+        return {
+            'handlings': [
+                handling.json() for hive in current_user.hives
+                for handling in hive.handlings
+            ]
+        }, 200
 
     @jwt_required()
     @api.doc(body=handling)
@@ -119,7 +179,9 @@ class Handling(Resource):
 
     @jwt_required()
     def get(self):
-        # return [handling for hive in current_user.hives for handling in hive.handlings] ???
+        # return
+        # [handling for hive in current_user.hives
+        # for handling in hive.handlings] ???
         handlings = []
 
         for hive in current_user.hives:

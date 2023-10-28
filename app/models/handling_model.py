@@ -4,6 +4,8 @@ from app.models.base_model import BaseModel
 # from app.models.beehive_model import BeeHiveModel
 from sqlalchemy_json import NestedMutableJson
 
+# CHECKS IF STRING IS IN HandlingType print('FEEDING' in list(HandlingType))
+
 
 @unique
 class HandlingType(str, Enum):
@@ -12,7 +14,6 @@ class HandlingType(str, Enum):
     TRANSPOSITION = 'TRANSPOSITION'
     SPLIT = 'SPLIT'
     INSPECTION = 'INSPECTION'
-    # CHECKS IF STRING IS IN HandlingType print('FEEDING' in list(HandlingType))
 
 
 class HandlingModel(db.Model, BaseModel):
