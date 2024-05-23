@@ -1,4 +1,3 @@
-import pytest
 import factory
 from app.database import db as _db
 from app.models.bee_model import BeeModel
