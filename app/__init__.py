@@ -1,7 +1,7 @@
 # melipolibre-api/__init__.py
 import os
 import json
-from app.blocklist import jwt_redis_blocklist
+#from app.blocklist import jwt_redis_blocklist
 from app.database import db
 from app.blueprint_api import blueprint, api
 # from app.api import api
@@ -56,7 +56,7 @@ def register_resources(api: Api):
 
     # Handlings Resources
     api.add_resource(Handlings, '/handlings')
-    # api.add_resource(BeeHive, '/handlings/<int:handlinh_id>')
+    # api.add_resource(Handling, '/handlings/<int:handlinh_id>')
 
 
 def create_app():
@@ -79,13 +79,13 @@ def create_app():
         load_bees()
 
     @jwt.token_in_blocklist_loader
-    def token_in_blocklist(jwt_header, jwt_payload: dict):
-        try:
-            jti = jwt_payload["jti"]
-            token_in_redis = jwt_redis_blocklist.get(jti)
-            return token_in_redis is not None
-        except:
-            return False
+    #def token_in_blocklist(jwt_header, jwt_payload: dict):
+    #    try:
+    #        jti = jwt_payload["jti"]
+    #        token_in_redis = jwt_redis_blocklist.get(jti)
+    #        return token_in_redis is not None
+    #    except:
+    #        return False
 
     @jwt.revoked_token_loader
     def revoked_token(jwt_header, jwt_payload: dict):
