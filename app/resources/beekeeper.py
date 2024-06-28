@@ -7,8 +7,8 @@ from flask_jwt_extended import (create_access_token, jwt_required,
                                 current_user)
 
 from app.database import db
-from app.blueprint_api import blueprint, api
-from app.blocklist import jwt_redis_blocklist
+from app.blueprint_api import api
+#from app.blocklist import jwt_redis_blocklist
 from app.models.beekeeper_model import BeeKeeperModel
 
 
@@ -69,6 +69,8 @@ class BeeKeeper(Resource):
 
 
 class BeeKeeperLogin(Resource):
+    @api.doc(params={'email': 'User\'s email'})
+    @api.doc(params={'password': 'User\'s password'})
     def post(self):
         _params = params.parse_args()
 
@@ -77,6 +79,7 @@ class BeeKeeperLogin(Resource):
         if beekeeper:
             if beekeeper.password == _params['password']:
                 access_token = create_access_token(identity=beekeeper.id)
+                print('Bearer ' + access_token)
                 return {'access_token': access_token}, 200
 
         return {'message': 'Wrong user or password'}, 401
@@ -85,8 +88,9 @@ class BeeKeeperLogin(Resource):
 class BeeKeeperLogout(Resource):
     @classmethod
     def logout(cls, jwt):
-        jwt_redis_blocklist.set(
-            jwt['jti'], "", ex=Config.JWT_ACCESS_TOKEN_EXPIRES)
+        #jwt_redis_blocklist.set(
+        #    jwt['jti'], "", ex=Config.JWT_ACCESS_TOKEN_EXPIRES)
+        pass
 
     @jwt_required()
     def post(self):

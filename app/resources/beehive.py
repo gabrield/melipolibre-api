@@ -1,5 +1,6 @@
 from flask_restx import Resource, reqparse
 from flask_jwt_extended import jwt_required, current_user
+from app.blueprint_api import api
 from app.database import db
 from app.models.bee_model import BeeModel
 from app.models.beehive_model import BeeHiveModel, BeeHiveType
@@ -13,12 +14,14 @@ params.add_argument('meliponary_id', type=int, required=True)
 
 class BeeHives(Resource):
     @jwt_required()
+    @api.doc(security='apikey')
     def get(self):
         return {
                 'beehives':
                 [beehive.json() for beehive in current_user.hives]
             }, 200
-    
+        
+    @api.doc(security='apikey')
     @jwt_required()
     def post(self):
         _params = params.parse_args()
