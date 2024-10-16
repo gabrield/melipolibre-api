@@ -6,13 +6,13 @@ services:
     ports:
       - "7000" # Change to the port your app runs on
     depends_on:
-      - redis
+      - valkey
       - postgres
     volumes:
       - shared_volume:/melipolibre-api/tmp
     environment:
       DATABASE_URL: postgres://postgres_user:password@postgres/melipolibre
-      REDIS_URL: redis://redis:6379/0
+      valkey_URL: valkey://valkey:6379/0
     networks:
       - melipolibre_network
 
@@ -27,8 +27,8 @@ services:
     networks:
       - melipolibre_network
 
-  redis:
-    image: redis:latest
+  valkey:
+    image: valkey/valkey:latest
     ports:
       - "6379:6379"
     networks:

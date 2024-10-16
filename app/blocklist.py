@@ -1,5 +1,5 @@
-import redis
+from valkey import Redis
 
-jwt_redis_blocklist = redis.StrictRedis(
+jwt_redis_blocklist = Redis(
         host="localhost", port=6379, db=0, decode_responses=True
     )
