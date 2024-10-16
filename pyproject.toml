@@ -3,3 +3,5 @@ run = "SECRET=$(openssl rand -base64 32) flask  run --debug --host=0.0.0.0 -p 70
 routes = "flask routes"
 lint = "pylint app/"
 test = "SECRET=$(openssl rand -base64 32) pytest -v"
+api_run = "SECRET=$(openssl rand -base64 32) gunicorn -w 1 'app:create_app()' -k eventlet --reload --log-level warning -b unix:///melipolibre-api/tmp/api_gunicorn.sock"
+

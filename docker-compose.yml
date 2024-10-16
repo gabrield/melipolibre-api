@@ -1,16 +1,15 @@
-version: '3'
 services:
-  app:
+  melipolibre-api:
     build:
       context: .
-    command: task run
+    #command: task api_run
     ports:
-      - "8000:8000" # Change to the port your app runs on
+      - "7000" # Change to the port your app runs on
     depends_on:
       - redis
       - postgres
     volumes:
-      - ./app:/app
+      - shared_volume:/melipolibre-api/tmp
     environment:
       DATABASE_URL: postgres://postgres_user:password@postgres/melipolibre
       REDIS_URL: redis://redis:6379/0
@@ -40,9 +39,10 @@ services:
     ports:
       - "80:80"
     volumes:
+      - shared_volume:/tmp
       - ./nginx.conf:/etc/nginx/nginx.conf
     depends_on:
-      - app
+      - melipolibre-api
     networks:
       - melipolibre_network
 
@@ -51,4 +51,5 @@ networks:
     driver: bridge
 
 volumes:
+  shared_volume:
   postgres_data:
