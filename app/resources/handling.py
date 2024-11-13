@@ -176,7 +176,6 @@ class Handlings(Resource):
 
 
 class Handling(Resource):
-
     @jwt_required()
     def get(self):
         # return
@@ -192,8 +191,7 @@ class Handling(Resource):
             'handlings': handlings
         }, 200
 
+
     @jwt_required()
-    @api.doc(body=handling)
-    @jwt_required()
-    def delete(self):
-        ...
+    def delete(self, handling_id):
+        pass

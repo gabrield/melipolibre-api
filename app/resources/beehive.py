@@ -40,6 +40,7 @@ class BeeHives(Resource):
 
 
 class BeeHive(Resource):
+    @api.doc(security='apikey')
     @jwt_required()
     def get(self, hive_id):
         hive = current_user.hives.filter_by(id=hive_id).first()
@@ -49,6 +50,7 @@ class BeeHive(Resource):
         
         return {'message' : 'Hive not found'}, 404
     
+    @api.doc(security='apikey')
     @jwt_required()
     def put(self, hive_id):
         _params = params.parse_args()
@@ -63,7 +65,7 @@ class BeeHive(Resource):
         
         return {'message' : 'Hive not updated'}, 401
 
-
+    @api.doc(security='apikey')
     @jwt_required()
     def delete(self, hive_id):
         hive = current_user.hives.filter_by(id=hive_id).first()

@@ -2,6 +2,7 @@ from flask_restx import Resource, reqparse
 from flask_jwt_extended import jwt_required, current_user
 from app.database import db
 from app.models.meliponary_model import MeliponaryModel
+from app.blueprint_api import api
 
 params = reqparse.RequestParser()
 params.add_argument('name', type=str, required=True, trim=True)
@@ -9,14 +10,18 @@ params.add_argument('address', type=str, required=True, trim=True)
 
 
 class Meliponaries(Resource):
+    @api.doc(security='apikey')
     @jwt_required()
     def get(self):  # TODO: filter by name and/or address
         return {
             'meliponaries':
                 [meliponary.json() for meliponary in current_user.meliponaries]
         }, 200
+    
+    
 
     @jwt_required()
+    @api.doc(security='apikey')
     def post(self):
         _params = params.parse_args()
         meliponary = MeliponaryModel(**_params, beekeeper=current_user)
